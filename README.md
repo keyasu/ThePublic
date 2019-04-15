@@ -2,6 +2,7 @@
     
 [TOC]
 
+
 ### 模块一 、面试题等等:
 #### 1、[面试题目](https://github.com/wangergang/ThePublic/blob/master/DailyTasks/DailyTasks.md)
 #### 2、[项目规范](https://github.com/wangergang/ThePublic/blob/master/DailyTasks/The_project_specification.md)
@@ -46,7 +47,8 @@
 > 3. [RxSwift_github](https://github.com/ReactiveX/RxSwift)
 
 #### 9、转场动画
-> 1. [导航栏的问题](https://www.jianshu.com/p/31f177158c9e)
+> 1. [pop - 动画](https://github.com/facebook/pop)
+> 1. [iOS 导航栏问题 - 简书](https://www.jianshu.com/p/31f177158c9e)
 
 
 
