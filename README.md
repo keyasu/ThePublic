@@ -14,8 +14,11 @@
 
 
 #### 1、布局规范网络请求库类
+> OC
 > 1. [AFNetWorking](https://github.com/AFNetworking/AFNetworking)`（OC）`
-> 2. [Alamofire](https://github.com/Alamofire/Alamofire)`（Swift）`
+> 2. [YTKNetwork - 猿题库 iOS 研发团队基于 AFNetworking 封装的 iOS 网络库](https://github.com/yuantiku/YTKNetwork)
+> Swift
+> 1. [Alamofire](https://github.com/Alamofire/Alamofire)`（Swift）`
 
 #### 2、活动指示器（HUD）
 > 1. [MBProgressHUD](https://github.com/jdg/MBProgressHUD)
@@ -46,12 +49,13 @@
 > 2. [RxSwift: ReactiveX for Swift_ 中文文档](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/)
 > 3. [RxSwift_github](https://github.com/ReactiveX/RxSwift)
 
-#### 9、转场动画
+#### 9、导航栏NavigationBar切换动画
+> 1. [FDFullscreenPopGesture](https://github.com/forkingdog/FDFullscreenPopGesture)
+> 2. [iOS 导航栏问题 - 简书](https://www.jianshu.com/p/31f177158c9e)
+
+#### 动画
 > 1. [pop - 动画](https://github.com/facebook/pop)
-> 1. [iOS 导航栏问题 - 简书](https://www.jianshu.com/p/31f177158c9e)
-
-
-
+> 
 
 
 
