@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ObjcTools
 //
-//  Created by douhuo on 2021/2/2.
+//  Created by wangergang on 2021/2/2.
 //
 
 #import "ViewController.h"
@@ -16,6 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = UIColor.orangeColor;
+    
+    
 }
 
 

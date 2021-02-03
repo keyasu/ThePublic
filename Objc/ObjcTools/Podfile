@@ -1,0 +1,29 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "10.0"
+
+target 'ObjcTools' do
+  use_frameworks!
+  
+  
+
+
+end
+
+
+
+
+    pod 'AFNetworking'
+#    pod 'SDWebImage'
+    # yy的svga动画
+    pod 'SVGAPlayer'
+    # 自动布局
+    pod 'Masonry'
+    # https://bugly.qq.com/v2/index 腾讯的 bug 统计
+    pod 'Bugly'
+    pod 'ZipArchive'
+    # pod 'AliyunOSSiOS'//上传到 OSS
+    # 提示框
+    pod 'MBProgressHUD'
+    pod 'JPush'
+    
+    pod 'ReactiveObjC'

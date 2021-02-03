@@ -2,13 +2,14 @@
 //  AppDelegate.h
 //  ObjcTools
 //
-//  Created by douhuo on 2021/2/2.
+//  Created by wangergang on 2021/2/2.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 
