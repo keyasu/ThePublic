@@ -4,14 +4,14 @@ platform :ios, "10.0"
 target 'ObjcTools' do
   use_frameworks!
   
-  
-
 
 end
 
-
-
-
+    # 键盘
+    pod 'IQKeyboardManager'
+    #使用SAMKeychain钥匙串存储设备唯一标示（本质是UUID）
+    pod 'SAMKeychain'
+	
     pod 'AFNetworking'
 #    pod 'SDWebImage'
     # yy的svga动画
@@ -25,5 +25,28 @@ end
     # 提示框
     pod 'MBProgressHUD'
     pod 'JPush'
+    # socket的链接和使用
+    pod 'SocketRocket'
+    
+    pod 'AliyunOSSiOS'
     
     pod 'ReactiveObjC'
+    # 动画
+    pod 'pop'
+
+
+# 所需要使用到的swift的项目
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    # 网络请求
+    pod 'Alamofire', '~> 5'
+    # 自动布局
+    pod 'SnapKit'
+    # 加载图片
+    pod 'Kingfisher'
+    pod 'KakaJSON'
+    #写的过程发现  KakaJSON  比 ObjectMapper 更好用, 索性就直接使用 KakaJSON
+    #pod 'ObjectMapper'
+    pod 'Toast-Swift'
+    pod 'SwiftyUserDefaults'
