@@ -1,0 +1,33 @@
+[
+    {
+        "titleStr":"抖蓝号",
+        "descStr":"",
+        "descColor":"#BBBBBB",
+        "idxStr":"1"
+    },{
+        "titleStr":"手机号",
+        "descStr":"",
+        "descColor":"#BBBBBB",
+        "idxStr":"2"
+    },{
+        "titleStr":"微信号",
+        "descStr":"已绑定",
+        "descColor":"#BBBBBB",
+        "idxStr":"3"
+    },{
+        "titleStr":"账户密码",
+        "descStr":"未设置",
+        "descColor":"#BBBBBB",
+        "idxStr":"4"
+    },{
+        "titleStr":"实名认证",
+        "descStr":"未绑定",
+        "descColor":"#FE5D58",
+        "idxStr":"5"
+    },{
+        "titleStr":"账号注销",
+        "descStr":"",
+        "descColor":"#FE5D58",
+        "idxStr":"6"
+    }
+]

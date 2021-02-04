@@ -12,6 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Extension)
 
+- (NSURL *)transToUrl;
+
+- (BOOL)isUrl;
+/**
+ 是不是空字符串
+
+ @return 后台使用 PHP 写的, 返回多数情况下会有 <null> (null) 等情况, 直接在这里进行为空判断
+ */
+- (BOOL)isBlankString;
+
 @end
 
 NS_ASSUME_NONNULL_END

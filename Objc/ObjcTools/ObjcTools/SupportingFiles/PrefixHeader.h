@@ -12,10 +12,24 @@
 //MARK: 添加三方的和系统的
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <MJRefresh/MJRefresh.h>
+#import <Masonry/Masonry.h>
+
+#import <AFNetworking/AFNetworking.h>
+#import <GKNavigationBar/GKNavigationBar.h>
+
+#import <SDWebImage/SDWebImage.h>
+
+#import <objc/message.h>
+#import <pop/POP.h>//pop动画
+
+// 宏定义需要的一些
+#import "CustomeHeader.h"
 
 
 
-
+//可以调用swift的代码了
+#import "ObjcTools-Swift.h"
 
 
 

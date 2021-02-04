@@ -39,5 +39,10 @@
     
 }
 
+#pragma mark -------------------- 初始化AppDelegate ------------------------
++ (AppDelegate *)appDelegate {
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
+}
+
 
 @end

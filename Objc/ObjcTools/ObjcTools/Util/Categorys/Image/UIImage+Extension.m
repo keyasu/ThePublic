@@ -10,4 +10,12 @@
 
 @implementation UIImage (Extension)
 
+
++ (nullable UIImage *)imageWithName:(NSString *)name {
+    if ([name isBlankString]) {
+        DLog(@"图片资源为空");
+    }
+    return [UIImage imageNamed:name];
+}
+
 @end

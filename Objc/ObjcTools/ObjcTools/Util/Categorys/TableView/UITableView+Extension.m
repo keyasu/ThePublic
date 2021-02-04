@@ -10,4 +10,13 @@
 
 @implementation UITableView (Extension)
 
+- (void)registerFromClass:(nullable Class)cellClass {
+    [self registerClass:[cellClass self] forCellReuseIdentifier:NSStringFromClass(cellClass)];
+}
+
+- (void)registerHeaderFooterViewFromClass:(nullable Class)cellClass {
+    [self registerClass:[cellClass self] forHeaderFooterViewReuseIdentifier:NSStringFromClass(cellClass)];
+}
+
+
 @end

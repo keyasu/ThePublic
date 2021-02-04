@@ -1,19 +1,16 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, "10.0"
 
-target 'ObjcTools' do
-  use_frameworks!
-  
-
-end
 
     # 键盘
     pod 'IQKeyboardManager'
     #使用SAMKeychain钥匙串存储设备唯一标示（本质是UUID）
     pod 'SAMKeychain'
+    # 刷新控件
+    pod 'MJRefresh'
 	
     pod 'AFNetworking'
-#    pod 'SDWebImage'
+    pod 'SDWebImage'
     # yy的svga动画
     pod 'SVGAPlayer'
     # 自动布局
@@ -27,12 +24,17 @@ end
     pod 'JPush'
     # socket的链接和使用
     pod 'SocketRocket'
-    
+    # 使用阿里云上传文件
     pod 'AliyunOSSiOS'
-    
+    # RAC 的使用
     pod 'ReactiveObjC'
     # 动画
     pod 'pop'
+    #
+    pod 'GKNavigationBar'
+
+     
+  pod 'YYKit/YYModel'
 
 
 # 所需要使用到的swift的项目
@@ -50,3 +52,13 @@ end
     #pod 'ObjectMapper'
     pod 'Toast-Swift'
     pod 'SwiftyUserDefaults'
+
+
+
+
+
+target 'ObjcTools' do
+  use_frameworks!
+  
+
+end

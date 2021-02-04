@@ -11,6 +11,21 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableView (Extension)
+/**
+ 注册 cell
+
+ @param cellClass 注册 cell
+ */
+- (void)registerFromClass:(nullable Class)cellClass ;
+
+
+/**
+ 注册 header footer view
+
+ @param cellClass 注册 header footer view
+ */
+- (void)registerHeaderFooterViewFromClass:(nullable Class)cellClass ;
+
 
 @end
 

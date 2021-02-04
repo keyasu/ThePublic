@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (Extension)
 
++ (nullable UIImage *)imageWithName:(NSString *)name ; 
+
 @end
 
 NS_ASSUME_NONNULL_END

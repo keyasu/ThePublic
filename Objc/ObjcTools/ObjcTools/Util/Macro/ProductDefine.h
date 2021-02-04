@@ -11,11 +11,10 @@
 
 
 
-//日志打印 Jason
+//日志打印 Meegar
 #ifdef DEBUG
 
 //#define DLog(format, ...) printf("")
-//[NSDate getLocalDateStr]
 #define DLog(format, ...) printf("""\
 ====================================================== \n\
 >>>>>>>> \n\
@@ -30,10 +29,6 @@ method: %s\n%s\n\
 #define DLog(format, ...)
 //#define DLog(str, args...) ((void)0)
 #endif
-
-
-
-
 
 
 

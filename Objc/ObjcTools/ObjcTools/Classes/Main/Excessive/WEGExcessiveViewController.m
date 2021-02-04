@@ -19,10 +19,16 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.orangeColor;
  
+    [self toDefaultVC];
     
     
 }
 
+//MARK: 跳转到默认控制器
+- (void)toDefaultVC
+{
+    [[XHProtocolResolver shareInstace] toDefaultTaBbarController];
+}
 
 
 @end
