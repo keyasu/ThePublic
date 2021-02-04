@@ -1,8 +1,8 @@
 //
-//  AppDelegate+WEG_Extension.h
+//  AppDelegate+Extension.h
 //  ObjcTools
 //
-//  Created by douhuo on 2021/2/2.
+//  Created by douhuo on 2021/2/4.
 //  Copyright © 2021 wangergang. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AppDelegate (WEG_Extension)
+@interface AppDelegate (Extension)
 
 @end
 

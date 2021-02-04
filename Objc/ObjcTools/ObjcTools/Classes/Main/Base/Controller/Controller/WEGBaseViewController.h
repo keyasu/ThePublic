@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WEGBaseViewController : UIViewController
 
+- (void)setupUI;
+- (void)setupNavigationUI;
+
 @end
 
 NS_ASSUME_NONNULL_END

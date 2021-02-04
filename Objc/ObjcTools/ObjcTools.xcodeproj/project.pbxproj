@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,6 @@
 		4C6236FB25C9586F007366EE /* WEGBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6236FA25C9586F007366EE /* WEGBaseAlertView.m */; };
 		4C62370225C958A4007366EE /* WEGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62370125C958A4007366EE /* WEGBaseViewController.m */; };
 		4C62370825C958C7007366EE /* WEGExcessiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62370725C958C7007366EE /* WEGExcessiveViewController.m */; };
-		4C62370E25C958F0007366EE /* AppDelegate+WEG_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62370D25C958F0007366EE /* AppDelegate+WEG_Extension.m */; };
 		4C62371B25C95B93007366EE /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62371A25C95B93007366EE /* NSString+Extension.m */; };
 		4C62372825C95BDF007366EE /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62372725C95BDF007366EE /* UIImageView+Extension.m */; };
 		4C62372E25C95BE6007366EE /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62372D25C95BE6007366EE /* UIImage+Extension.m */; };
@@ -39,6 +38,7 @@
 		4C62378725C95DD1007366EE /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C62378625C95DD1007366EE /* Test.swift */; };
 		4C62379D25C95E66007366EE /* UtilsMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62379C25C95E66007366EE /* UtilsMacro.m */; };
 		4C6237A925C95FEA007366EE /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6237A825C95FEA007366EE /* Constants.m */; };
+		4C6238A225CB8442007366EE /* AppDelegate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6238A125CB8442007366EE /* AppDelegate+Extension.m */; };
 		A5D9D7A21281EF81D8416F18 /* Pods_ObjcTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,8 +86,6 @@
 		4C62370125C958A4007366EE /* WEGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEGBaseViewController.m; sourceTree = "<group>"; };
 		4C62370625C958C7007366EE /* WEGExcessiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEGExcessiveViewController.h; sourceTree = "<group>"; };
 		4C62370725C958C7007366EE /* WEGExcessiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEGExcessiveViewController.m; sourceTree = "<group>"; };
-		4C62370C25C958F0007366EE /* AppDelegate+WEG_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WEG_Extension.h"; sourceTree = "<group>"; };
-		4C62370D25C958F0007366EE /* AppDelegate+WEG_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WEG_Extension.m"; sourceTree = "<group>"; };
 		4C62371825C95B72007366EE /* UIExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIExtension.h; sourceTree = "<group>"; };
 		4C62371925C95B93007366EE /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		4C62371A25C95B93007366EE /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
@@ -129,6 +127,8 @@
 		4C6237A625C95F0B007366EE /* ProductDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDefine.h; sourceTree = "<group>"; };
 		4C6237A725C95FEA007366EE /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4C6237A825C95FEA007366EE /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		4C6238A025CB8442007366EE /* AppDelegate+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Extension.h"; sourceTree = "<group>"; };
+		4C6238A125CB8442007366EE /* AppDelegate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Extension.m"; sourceTree = "<group>"; };
 		702FF38F2BD5DA2F33C94C29 /* Pods-ObjcTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.debug.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.debug.xcconfig"; sourceTree = "<group>"; };
 		91123BEB521159F33E44D303 /* Pods-ObjcTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.release.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.release.xcconfig"; sourceTree = "<group>"; };
 		B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,8 +227,8 @@
 			children = (
 				4C62367E25C94C3D007366EE /* AppDelegate.h */,
 				4C62367F25C94C3D007366EE /* AppDelegate.m */,
-				4C62370C25C958F0007366EE /* AppDelegate+WEG_Extension.h */,
-				4C62370D25C958F0007366EE /* AppDelegate+WEG_Extension.m */,
+				4C6238A025CB8442007366EE /* AppDelegate+Extension.h */,
+				4C6238A125CB8442007366EE /* AppDelegate+Extension.m */,
 				4C62368425C94C3D007366EE /* ViewController.h */,
 				4C62368525C94C3D007366EE /* ViewController.m */,
 				4C62378425C95DBD007366EE /* PrefixHeader.h */,
@@ -539,7 +539,6 @@
 				702FF38F2BD5DA2F33C94C29 /* Pods-ObjcTools.debug.xcconfig */,
 				91123BEB521159F33E44D303 /* Pods-ObjcTools.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -736,7 +735,6 @@
 				4C62372E25C95BE6007366EE /* UIImage+Extension.m in Sources */,
 				4C62377125C95C92007366EE /* UICollectionReusableView+Extension.m in Sources */,
 				4C62376525C95C7E007366EE /* UITableView+Extension.m in Sources */,
-				4C62370E25C958F0007366EE /* AppDelegate+WEG_Extension.m in Sources */,
 				4C62375325C95C60007366EE /* NSDate+Extension.m in Sources */,
 				4C62377725C95CAF007366EE /* UIViewController+Extension.m in Sources */,
 				4C62375925C95C70007366EE /* UICollectionView+Extension.m in Sources */,
@@ -748,6 +746,7 @@
 				4C62372825C95BDF007366EE /* UIImageView+Extension.m in Sources */,
 				4C6236FB25C9586F007366EE /* WEGBaseAlertView.m in Sources */,
 				4C62370225C958A4007366EE /* WEGBaseViewController.m in Sources */,
+				4C6238A225CB8442007366EE /* AppDelegate+Extension.m in Sources */,
 				4C62379D25C95E66007366EE /* UtilsMacro.m in Sources */,
 				4C62378725C95DD1007366EE /* Test.swift in Sources */,
 				4C62373B25C95C31007366EE /* UIFont+Extension.m in Sources */,

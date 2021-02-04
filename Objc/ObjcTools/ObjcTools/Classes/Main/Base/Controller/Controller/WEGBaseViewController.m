@@ -13,6 +13,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupUI];
+    [self setupNavigationUI];
+}
+
+- (void)setupUI {
+    
+}
+- (void) {
+    
 }
 
 @end
