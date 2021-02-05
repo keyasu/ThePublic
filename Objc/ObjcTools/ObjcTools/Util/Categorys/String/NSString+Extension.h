@@ -21,6 +21,14 @@ NS_ASSUME_NONNULL_BEGIN
  @return 后台使用 PHP 写的, 返回多数情况下会有 <null> (null) 等情况, 直接在这里进行为空判断
  */
 - (BOOL)isBlankString;
+//MARK: -  字符串后面拼接数据
+- (NSString *)append:(NSString *)str;
+
+
+
+
+
+
 
 @end
 

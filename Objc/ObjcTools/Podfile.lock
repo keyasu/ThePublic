@@ -62,6 +62,8 @@ PODS:
     - Protobuf (~> 3.4)
   - SwiftyUserDefaults (5.0.0)
   - Toast-Swift (5.0.1)
+  - WechatOpenSDK (1.8.7.1)
+  - YYModel (1.0.4)
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
@@ -89,6 +91,8 @@ DEPENDENCIES:
   - SVGAPlayer
   - SwiftyUserDefaults
   - Toast-Swift
+  - WechatOpenSDK
+  - YYModel
   - ZipArchive
 
 SPEC REPOS:
@@ -122,6 +126,8 @@ SPEC REPOS:
     - SVGAPlayer
     - SwiftyUserDefaults
     - Toast-Swift
+    - WechatOpenSDK
+    - YYModel
     - ZipArchive
 
 SPEC CHECKSUMS:
@@ -154,8 +160,10 @@ SPEC CHECKSUMS:
   SVGAPlayer: f3b3792ae66f7cb3f944ae373a40864db9a04331
   SwiftyUserDefaults: 33fcb42bd1feb53a37d873feb62c82967db5f7f6
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 8d451159189dbefe11aae4c153ef1bb62aa01e4a
+PODFILE CHECKSUM: 635c399a929d6e737f39c9db78b725e477d4b9ae
 
 COCOAPODS: 1.10.0

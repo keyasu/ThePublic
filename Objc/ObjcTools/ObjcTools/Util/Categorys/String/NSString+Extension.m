@@ -50,5 +50,10 @@
     return NO;
 }
 
+//MARK: -  字符串后面拼接数据
+- (NSString *)append:(NSString *)str {
+    NSString * re = [NSString stringWithFormat:@"%@%@", self, str];
+    return re;
+}
 
 @end

@@ -14,6 +14,9 @@
 #import <Foundation/Foundation.h>
 #import <MJRefresh/MJRefresh.h>
 #import <Masonry/Masonry.h>
+#import <YYModel/YYModel.h>
+#import <WXApi.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 #import <AFNetworking/AFNetworking.h>
 #import <GKNavigationBar/GKNavigationBar.h>

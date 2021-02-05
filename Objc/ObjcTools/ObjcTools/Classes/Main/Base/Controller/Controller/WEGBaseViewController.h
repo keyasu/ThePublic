@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WEGBaseViewController : UIViewController
 
+
 /// 初始化的一些设置在这里给实现了的呢
 - (void)setupUI;
 ///这里的是设置一些导航相关的内容
@@ -21,6 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)requestList;
 
 
+
+- (void)setNavTitle:(NSString *)navTitle;
+
+//- (void)showMsg:(NSString *)message;
 
 @end
 

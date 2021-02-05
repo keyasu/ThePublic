@@ -17,18 +17,36 @@
     [self setupUI];
     [self setupNavigationUI];
  
+    if (indebug) {
+        self.view.backgroundColor = UIColor.hex_FBFDFF;
+    }
+    
 }
 
-- (void)setDefaultData {
+- (void)setDefaultData
+{
     self.gk_navBarAlpha = 1.0;
     self.gk_navigationBar.backgroundColor = UIColor.hex_FFFFFF;
+    self.gk_navTitleColor = UIColor.hex_00184C;
     self.gk_navTitleFont = [UIFont fontWith_DINAlternateFont_Bold_fontSize:36];
+    
+    if (@available(iOS 11.0, *)) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
     
 }
 
 - (void)setupUI {}
 - (void)setupNavigationUI {}
 - (void)requestList {}
+
+
+- (void)setNavTitle:(NSString *)navTitle
+{
+    self.gk_navTitle = navTitle;
+}
 
 
 
@@ -39,6 +57,11 @@
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return self.gk_statusBarStyle;
 }
+
+//+ (void)showMsg:(NSString *)message
+//{
+//    [[XHHUDTools tools] showShortTips:message];
+//}
 
 
 

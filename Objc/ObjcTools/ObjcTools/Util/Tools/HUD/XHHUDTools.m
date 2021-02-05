@@ -15,7 +15,7 @@
 
 @implementation XHHUDTools
 
-+ (XHHUDTools *)hudHepler
++ (XHHUDTools *)tools
 {
     static XHHUDTools *hudHelper = nil;
     static dispatch_once_t onceToken;

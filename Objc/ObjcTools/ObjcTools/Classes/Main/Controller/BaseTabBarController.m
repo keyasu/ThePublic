@@ -13,7 +13,7 @@
 #import "XHFindViewController.h"
 #import "XHMessageViewController.h"
 #import "XHMeViewController.h"
-
+#import "BaseNavigationViewController.h"
 
 @interface BaseTabBarController ()
 <
@@ -76,8 +76,9 @@
                     withTittle:(NSString *)tittle
                      withIndex:(NSInteger)index
 {
-    //BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:controller];
-    UINavigationController * nav = [UINavigationController rootVC:controller transitionScale:NO];
+    BaseNavigationViewController *nav = [BaseNavigationViewController rootVC:controller transitionScale:NO];
+    //[[BaseNavigationViewController alloc] initWithRootViewController:controller];
+//    UINavigationController * nav = [UINavigationController rootVC:controller transitionScale:NO];
     nav.view.backgroundColor = UIColor.whiteColor;
     
     [nav.tabBarItem setImage:image];

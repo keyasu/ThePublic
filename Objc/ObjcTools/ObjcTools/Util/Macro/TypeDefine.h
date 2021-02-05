@@ -18,7 +18,17 @@ typedef NS_ENUM(int, TVloadType)
     TVloadTypeAll           = 4,     //刷新和加载更多都有
 };
 
-
+typedef NS_ENUM(NSUInteger, WebViewLoadType) {
+    /// 未知
+    WebViewLoadTypeUnknown = 0,
+    /// 未知
+    WebViewLoadTypeUnknown1,
+    /// 社会公寓
+    WebViewLoadTypeGongYue,
+    /// 隐私政策
+    WebViewLoadTypeZhengce,
+    
+};
 
 
 

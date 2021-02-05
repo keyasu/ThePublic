@@ -8,10 +8,11 @@
 
 #import "XHHomeViewController.h"
 #import "XHHomeViewCell.h"
+#import "XHHomeViewModel.h"
 
 @interface XHHomeViewController ()
 /// 数据源
-@property (nonatomic, strong) NSMutableArray *dataCource;
+@property (nonatomic, strong) NSMutableArray<XHHomeViewModel *> *dataCource;
 
 @end
 
@@ -24,12 +25,15 @@
     
 }
 
-- (void)setupUI {
-    self.dataCource = [NSMutableArray arrayWithArray:[[JsonInstance instance] readJsonArrayWithFileName:@"User_settings_safe"]];
+- (void)setupUI
+{
+    NSArray * jsonList = [[JsonInstance instance] readJsonArrayWithFileName:@"XH_Home_list"];
+    NSArray * models = [NSArray yy_modelArrayWithClass:[XHHomeViewModel class] json:jsonList];
+    self.dataCource = [NSMutableArray arrayWithArray:models];
     [self reloadTBView];
 }
 - (void)setupNavigationUI {
-    self.gk_navTitle = @"首页";
+    [self setNavTitle:@"首页"];
 }
 
 // MARK: - 这个方法给子类设置 tableView 的 样式 ，frame pageSize 等
@@ -53,9 +57,23 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     XHHomeViewCell * cell = [[XHHomeViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:[XHHomeViewCell cellReuseIdentifier]];
-    
+    if (indexPath.row < self.dataCource.count) {
+        XHHomeViewModel * model = [self.dataCource SafeObjectAt:indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%ld - %@", (long)indexPath.row+1, model.dStr];
+    }
     
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    XHHomeViewModel * model = [self.dataCource SafeObjectAt:indexPath.row];
+    NSString *tStr = model.tStr;
+    NSString *dStr = model.dStr;
+    
+    UIViewController * vc = [[NSClassFromString(tStr) alloc] init];
+    vc.gk_navTitle = dStr;
+    vc.gk_navBackgroundColor = UIColor.cyanColor;
+    [self pushToController:vc];
+    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return kNewHeight(100);

@@ -74,6 +74,16 @@
 		4C623B7025CBF862007366EE /* XHHomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623B6F25CBF862007366EE /* XHHomeViewCell.m */; };
 		4C623B7C25CBFBE7007366EE /* JsonInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623B7B25CBFBE7007366EE /* JsonInstance.m */; };
 		4C623B8525CBFC6A007366EE /* XH_Home_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C623B8425CBFC6A007366EE /* XH_Home_list.json */; };
+		4C623BD025CCCF2C007366EE /* XHHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623BCF25CCCF2C007366EE /* XHHomeViewModel.m */; };
+		4C623BD725CCD18C007366EE /* ScreenShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623BD625CCD18C007366EE /* ScreenShotViewController.m */; };
+		4C623BE425CCD507007366EE /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623BE325CCD507007366EE /* BaseWebViewController.m */; };
+		4C623BEB25CCD584007366EE /* BaseWebViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623BEA25CCD584007366EE /* BaseWebViewModel.m */; };
+		4C623BF525CCD6A1007366EE /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623BF425CCD6A1007366EE /* NSObject+Extension.m */; };
+		4C623BFD25CCD815007366EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C623BFC25CCD815007366EE /* WebKit.framework */; };
+		4C623C4825CCDC0C007366EE /* UIResponder+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623C4725CCDC0C007366EE /* UIResponder+Extension.m */; };
+		4C623C5125CCDE23007366EE /* UINavigationController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623C5025CCDE23007366EE /* UINavigationController+Extension.m */; };
+		4C623C5725CCDFDB007366EE /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623C5625CCDFDB007366EE /* BaseNavigationViewController.m */; };
+		4C623C6325CCEB8B007366EE /* UIButton+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623C6225CCEB8B007366EE /* UIButton+Action.m */; };
 		A5D9D7A21281EF81D8416F18 /* Pods_ObjcTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */; };
 /* End PBXBuildFile section */
 
@@ -230,6 +240,25 @@
 		4C623B7A25CBFBE7007366EE /* JsonInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonInstance.h; sourceTree = "<group>"; };
 		4C623B7B25CBFBE7007366EE /* JsonInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonInstance.m; sourceTree = "<group>"; };
 		4C623B8425CBFC6A007366EE /* XH_Home_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XH_Home_list.json; sourceTree = "<group>"; };
+		4C623BCE25CCCF2C007366EE /* XHHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHHomeViewModel.h; sourceTree = "<group>"; };
+		4C623BCF25CCCF2C007366EE /* XHHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHHomeViewModel.m; sourceTree = "<group>"; };
+		4C623BD525CCD18C007366EE /* ScreenShotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenShotViewController.h; sourceTree = "<group>"; };
+		4C623BD625CCD18C007366EE /* ScreenShotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenShotViewController.m; sourceTree = "<group>"; };
+		4C623BE225CCD507007366EE /* BaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		4C623BE325CCD507007366EE /* BaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		4C623BE925CCD584007366EE /* BaseWebViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebViewModel.h; sourceTree = "<group>"; };
+		4C623BEA25CCD584007366EE /* BaseWebViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewModel.m; sourceTree = "<group>"; };
+		4C623BF325CCD6A1007366EE /* NSObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		4C623BF425CCD6A1007366EE /* NSObject+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		4C623BFC25CCD815007366EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4C623C4625CCDC0C007366EE /* UIResponder+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Extension.h"; sourceTree = "<group>"; };
+		4C623C4725CCDC0C007366EE /* UIResponder+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Extension.m"; sourceTree = "<group>"; };
+		4C623C4F25CCDE23007366EE /* UINavigationController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extension.h"; sourceTree = "<group>"; };
+		4C623C5025CCDE23007366EE /* UINavigationController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Extension.m"; sourceTree = "<group>"; };
+		4C623C5525CCDFDB007366EE /* BaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		4C623C5625CCDFDB007366EE /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		4C623C6125CCEB8B007366EE /* UIButton+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Action.h"; sourceTree = "<group>"; };
+		4C623C6225CCEB8B007366EE /* UIButton+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Action.m"; sourceTree = "<group>"; };
 		702FF38F2BD5DA2F33C94C29 /* Pods-ObjcTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.debug.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.debug.xcconfig"; sourceTree = "<group>"; };
 		91123BEB521159F33E44D303 /* Pods-ObjcTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.release.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.release.xcconfig"; sourceTree = "<group>"; };
 		B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +269,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C623BFD25CCD815007366EE /* WebKit.framework in Frameworks */,
 				A5D9D7A21281EF81D8416F18 /* Pods_ObjcTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +445,7 @@
 		4C6236E325C9580C007366EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4C623BE125CCD4F9007366EE /* Web */,
 				4C623AC825CBEEC0007366EE /* VC */,
 				4C6236FF25C95899007366EE /* Controller */,
 			);
@@ -455,6 +486,8 @@
 			children = (
 				4C62370025C958A4007366EE /* WEGBaseViewController.h */,
 				4C62370125C958A4007366EE /* WEGBaseViewController.m */,
+				4C623C5525CCDFDB007366EE /* BaseNavigationViewController.h */,
+				4C623C5625CCDFDB007366EE /* BaseNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -503,6 +536,8 @@
 			isa = PBXGroup;
 			children = (
 				4C62371825C95B72007366EE /* UIExtension.h */,
+				4C623C4525CCDBF8007366EE /* UIResponder */,
+				4C623BF225CCD691007366EE /* NSObject */,
 				4C623AA725CBDEC0007366EE /* NullSafe */,
 				4C623A9725CBDE68007366EE /* Array */,
 				4C623A8725CBDDD1007366EE /* DIctionary */,
@@ -593,6 +628,8 @@
 			children = (
 				4C62374B25C95C52007366EE /* UIButton+Extension.h */,
 				4C62374C25C95C52007366EE /* UIButton+Extension.m */,
+				4C623C6125CCEB8B007366EE /* UIButton+Action.h */,
+				4C623C6225CCEB8B007366EE /* UIButton+Action.m */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -626,6 +663,8 @@
 			children = (
 				4C62377525C95CAF007366EE /* UIViewController+Extension.h */,
 				4C62377625C95CAF007366EE /* UIViewController+Extension.m */,
+				4C623C4F25CCDE23007366EE /* UINavigationController+Extension.h */,
+				4C623C5025CCDE23007366EE /* UINavigationController+Extension.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -694,6 +733,7 @@
 		4C6239AD25CBD2A1007366EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4C623BD425CCD15F007366EE /* 1.ScreenShot */,
 				4C623B7625CBFB2D007366EE /* Controller */,
 			);
 			path = Home;
@@ -863,6 +903,8 @@
 				4C6239B225CBD2C9007366EE /* XHHomeViewController.m */,
 				4C623B6E25CBF862007366EE /* XHHomeViewCell.h */,
 				4C623B6F25CBF862007366EE /* XHHomeViewCell.m */,
+				4C623BCE25CCCF2C007366EE /* XHHomeViewModel.h */,
+				4C623BCF25CCCF2C007366EE /* XHHomeViewModel.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -892,6 +934,52 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
+		4C623BD425CCD15F007366EE /* 1.ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				4C623BD525CCD18C007366EE /* ScreenShotViewController.h */,
+				4C623BD625CCD18C007366EE /* ScreenShotViewController.m */,
+			);
+			path = 1.ScreenShot;
+			sourceTree = "<group>";
+		};
+		4C623BE125CCD4F9007366EE /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				4C623BE825CCD57D007366EE /* Model */,
+				4C623BE225CCD507007366EE /* BaseWebViewController.h */,
+				4C623BE325CCD507007366EE /* BaseWebViewController.m */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		4C623BE825CCD57D007366EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C623BE925CCD584007366EE /* BaseWebViewModel.h */,
+				4C623BEA25CCD584007366EE /* BaseWebViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C623BF225CCD691007366EE /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				4C623BF325CCD6A1007366EE /* NSObject+Extension.h */,
+				4C623BF425CCD6A1007366EE /* NSObject+Extension.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		4C623C4525CCDBF8007366EE /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				4C623C4625CCDC0C007366EE /* UIResponder+Extension.h */,
+				4C623C4725CCDC0C007366EE /* UIResponder+Extension.m */,
+			);
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
 		EE06F6045937D448FDB8DF01 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -904,6 +992,7 @@
 		FA49F3BC3B00616CA787CA81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C623BFC25CCD815007366EE /* WebKit.framework */,
 				B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */,
 			);
 			name = Frameworks;
@@ -1089,7 +1178,9 @@
 				4C6239D025CBD3D9007366EE /* XHHUDTools.m in Sources */,
 				4C623B3125CBF483007366EE /* UIImage+Common.m in Sources */,
 				4C6239BF25CBD2D9007366EE /* XHMessageViewController.m in Sources */,
+				4C623C5725CCDFDB007366EE /* BaseNavigationViewController.m in Sources */,
 				4C62375F25C95C76007366EE /* UICollectionViewCell+Extension.m in Sources */,
+				4C623BD025CCCF2C007366EE /* XHHomeViewModel.m in Sources */,
 				4C62370825C958C7007366EE /* WEGExcessiveViewController.m in Sources */,
 				4C62368625C94C3D007366EE /* ViewController.m in Sources */,
 				4C62373525C95C27007366EE /* UIView+Extension.m in Sources */,
@@ -1103,14 +1194,17 @@
 				4C623B5625CBF6B4007366EE /* NSData+Common.m in Sources */,
 				4C623B4725CBF503007366EE /* XHPathUtility.m in Sources */,
 				4C623A9325CBDE16007366EE /* NSDictionary+Extension.m in Sources */,
+				4C623BEB25CCD584007366EE /* BaseWebViewModel.m in Sources */,
 				4C623A8A25CBDDE1007366EE /* NSDictionary+SafeObject.m in Sources */,
 				4C62372E25C95BE6007366EE /* UIImage+Extension.m in Sources */,
 				4C623AB825CBE3D3007366EE /* ToolInstance.swift in Sources */,
 				4C623B2B25CBF444007366EE /* UIView+Animation.m in Sources */,
 				4C62395925CBC106007366EE /* BaseTabBarController.m in Sources */,
+				4C623C4825CCDC0C007366EE /* UIResponder+Extension.m in Sources */,
 				4C6239B325CBD2C9007366EE /* XHHomeViewController.m in Sources */,
 				4C62377125C95C92007366EE /* UICollectionReusableView+Extension.m in Sources */,
 				4C62376525C95C7E007366EE /* UITableView+Extension.m in Sources */,
+				4C623BF525CCD6A1007366EE /* NSObject+Extension.m in Sources */,
 				4C6239C625CBD2F0007366EE /* XHMeViewController.m in Sources */,
 				4C62375325C95C60007366EE /* NSDate+Extension.m in Sources */,
 				4C623AA925CBDED8007366EE /* NullSafe.m in Sources */,
@@ -1119,6 +1213,7 @@
 				4C623AD125CBEEF3007366EE /* WEGBaseTBViewController.m in Sources */,
 				4C62377725C95CAF007366EE /* UIViewController+Extension.m in Sources */,
 				4C62375925C95C70007366EE /* UICollectionView+Extension.m in Sources */,
+				4C623BD725CCD18C007366EE /* ScreenShotViewController.m in Sources */,
 				4C6236E825C9581E007366EE /* BaseModel.m in Sources */,
 				4C6239B925CBD2D2007366EE /* XHFindViewController.m in Sources */,
 				4C62374125C95C3B007366EE /* UIColor+Extension.m in Sources */,
@@ -1127,7 +1222,9 @@
 				4C623A8025CBDBB4007366EE /* JPushInstance.m in Sources */,
 				4C62376B25C95C85007366EE /* UITableViewCell+Extension.m in Sources */,
 				4C62395F25CBC14D007366EE /* BaseTabBar.m in Sources */,
+				4C623BE425CCD507007366EE /* BaseWebViewController.m in Sources */,
 				4C623B6425CBF802007366EE /* WEGBaseTBCell.m in Sources */,
+				4C623C6325CCEB8B007366EE /* UIButton+Action.m in Sources */,
 				4C6236F225C9585E007366EE /* WEGBaseView.m in Sources */,
 				4C623B6A25CBF80C007366EE /* WEGBaseCLCell.m in Sources */,
 				4C623AB125CBE2C4007366EE /* ThirdExtension.swift in Sources */,
@@ -1137,6 +1234,7 @@
 				4C62370225C958A4007366EE /* WEGBaseViewController.m in Sources */,
 				4C6238A225CB8442007366EE /* AppDelegate+Extension.m in Sources */,
 				4C62379D25C95E66007366EE /* UtilsMacro.m in Sources */,
+				4C623C5125CCDE23007366EE /* UINavigationController+Extension.m in Sources */,
 				4C62378725C95DD1007366EE /* Test.swift in Sources */,
 				4C623A7225CBD9F7007366EE /* UIView+Addition.m in Sources */,
 				4C62373B25C95C31007366EE /* UIFont+Extension.m in Sources */,

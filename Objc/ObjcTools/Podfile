@@ -32,10 +32,12 @@ platform :ios, "10.0"
     pod 'pop'
     #
     pod 'GKNavigationBar'
+    # 数据转模型
+    pod 'YYModel'
 
-     
-  pod 'YYKit/YYModel'
-
+    # 集成微信分享的相关信息
+    # https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/iOS.html
+    pod 'WechatOpenSDK'
 
 # 所需要使用到的swift的项目
     pod 'RxSwift', '~> 5'

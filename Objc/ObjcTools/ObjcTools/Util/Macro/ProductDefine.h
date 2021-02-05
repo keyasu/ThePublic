@@ -34,11 +34,11 @@ method: %s\n%s\n\
 
 #ifdef DEBUG
 ///在测试环境
-#define IN_DEBUG 1
+#define indebug 1
 
 #else
 ///不在测试环境
-#define INDEBUG 0
+#define indebug 0
 
 #endif
 

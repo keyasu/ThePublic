@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XHHUDTools : NSObject
 
-+ (XHHUDTools *)hudHepler;
++ (XHHUDTools *)tools;
 
 /// 展示 短提示 2s 在 window 上面展示
 - (void)showShortTips:(NSString*)message InView:(UIView *)view ;
