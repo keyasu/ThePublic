@@ -17,7 +17,10 @@
 @property (nonatomic, strong) UIButton * btn2;
 @property (nonatomic, strong) UIButton * btn3;
 
-
+/// <#desc#>
+@property (nonatomic, strong) UIScrollView *scrollView;
+/// <#desc#>
+@property (nonatomic, strong) UILabel *dLabel;
 
 @end
 
@@ -118,7 +121,12 @@
         make.edges.mas_equalTo(self.view).insets(UIEdgeInsetsMake(20, 20, 20, 20));
     }];
 }
-
+- (UIScrollView *)scrollView {
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc] init];
+    }
+    return _scrollView;
+}
 
 
 

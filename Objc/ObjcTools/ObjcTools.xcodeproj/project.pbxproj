@@ -84,6 +84,7 @@
 		4C623C5125CCDE23007366EE /* UINavigationController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623C5025CCDE23007366EE /* UINavigationController+Extension.m */; };
 		4C623C5725CCDFDB007366EE /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623C5625CCDFDB007366EE /* BaseNavigationViewController.m */; };
 		4C623C6325CCEB8B007366EE /* UIButton+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623C6225CCEB8B007366EE /* UIButton+Action.m */; };
+		4C623D2D25CD4DFC007366EE /* XHRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C623D2C25CD4DFC007366EE /* XHRACViewController.m */; };
 		A5D9D7A21281EF81D8416F18 /* Pods_ObjcTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */; };
 /* End PBXBuildFile section */
 
@@ -259,6 +260,8 @@
 		4C623C5625CCDFDB007366EE /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		4C623C6125CCEB8B007366EE /* UIButton+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Action.h"; sourceTree = "<group>"; };
 		4C623C6225CCEB8B007366EE /* UIButton+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Action.m"; sourceTree = "<group>"; };
+		4C623D2B25CD4DFC007366EE /* XHRACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACViewController.h; sourceTree = "<group>"; };
+		4C623D2C25CD4DFC007366EE /* XHRACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACViewController.m; sourceTree = "<group>"; };
 		702FF38F2BD5DA2F33C94C29 /* Pods-ObjcTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.debug.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.debug.xcconfig"; sourceTree = "<group>"; };
 		91123BEB521159F33E44D303 /* Pods-ObjcTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.release.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.release.xcconfig"; sourceTree = "<group>"; };
 		B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -733,6 +736,7 @@
 		4C6239AD25CBD2A1007366EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4C623D2225CD4DDE007366EE /* RAC */,
 				4C623BD425CCD15F007366EE /* 1.ScreenShot */,
 				4C623B7625CBFB2D007366EE /* Controller */,
 			);
@@ -978,6 +982,15 @@
 				4C623C4725CCDC0C007366EE /* UIResponder+Extension.m */,
 			);
 			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		4C623D2225CD4DDE007366EE /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				4C623D2B25CD4DFC007366EE /* XHRACViewController.h */,
+				4C623D2C25CD4DFC007366EE /* XHRACViewController.m */,
+			);
+			path = RAC;
 			sourceTree = "<group>";
 		};
 		EE06F6045937D448FDB8DF01 /* Pods */ = {
@@ -1231,6 +1244,7 @@
 				4C623AD725CBEEFC007366EE /* WEGBaseCLViewController.m in Sources */,
 				4C62372825C95BDF007366EE /* UIImageView+Extension.m in Sources */,
 				4C6236FB25C9586F007366EE /* WEGBaseAlertView.m in Sources */,
+				4C623D2D25CD4DFC007366EE /* XHRACViewController.m in Sources */,
 				4C62370225C958A4007366EE /* WEGBaseViewController.m in Sources */,
 				4C6238A225CB8442007366EE /* AppDelegate+Extension.m in Sources */,
 				4C62379D25C95E66007366EE /* UtilsMacro.m in Sources */,
