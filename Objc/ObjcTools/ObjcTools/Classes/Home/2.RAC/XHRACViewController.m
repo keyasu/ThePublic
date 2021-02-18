@@ -1,23 +1,31 @@
 //
-//  XHMeViewController.m
+//  XHRACViewController.m
 //  ObjcTools
 //
-//  Created by douhuo on 2021/2/4.
+//  Created by douhuo on 2021/2/5.
 //  Copyright © 2021 wangergang. All rights reserved.
 //
 
-#import "XHMeViewController.h"
+#import "XHRACViewController.h"
 
-@interface XHMeViewController ()
+@interface XHRACViewController ()
 
 @end
 
-@implementation XHMeViewController
+@implementation XHRACViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.randomColor;
+    
+    
+}
+
+- (void)demo1 {
+    /* 元祖 */
+    RACTuple *tuple = [RACTuple tupleWithObjects:@"firstObject",@"secondObject",@1, nil];
+    NSString *string = tuple[1];
+    NSLog(@"%@", string);
 }
 
 /*

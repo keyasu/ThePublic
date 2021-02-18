@@ -25,7 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setNavTitle:(NSString *)navTitle;
 
-//- (void)showMsg:(NSString *)message;
 
 @end
 

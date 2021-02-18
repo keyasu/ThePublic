@@ -10,9 +10,6 @@
 #import "BaseTabBar.h"
 
 #import "XHHomeViewController.h"
-#import "XHFindViewController.h"
-#import "XHMessageViewController.h"
-#import "XHMeViewController.h"
 #import "BaseNavigationViewController.h"
 
 @interface BaseTabBarController ()
@@ -77,7 +74,6 @@
                      withIndex:(NSInteger)index
 {
     BaseNavigationViewController *nav = [BaseNavigationViewController rootVC:controller transitionScale:NO];
-    //[[BaseNavigationViewController alloc] initWithRootViewController:controller];
 //    UINavigationController * nav = [UINavigationController rootVC:controller transitionScale:NO];
     nav.view.backgroundColor = UIColor.whiteColor;
     
@@ -87,6 +83,7 @@
     UIImage *selectedImage = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [nav.tabBarItem setSelectedImage:selectedImage];
     nav.tabBarItem.title = tittle;
+    nav.title = tittle;
     
     [self addChildViewController:nav];
 }

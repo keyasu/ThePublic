@@ -27,11 +27,12 @@
     [super pushViewController:viewController animated:animated];
     
     //替换掉leftBarButtonItem
-    if (viewController.navigationItem.leftBarButtonItem== nil && [self.viewControllers count] > 1) {
-        viewController.navigationItem.leftBarButtonItem =[self customLeftBackButton];
+    if (viewController.navigationItem.leftBarButtonItem == nil && [self.viewControllers count] > 1) {
+        viewController.navigationItem.leftBarButtonItem = [self customLeftBackButton];
     }
+    self.gk_navTitle = @"moih";
 }
-
+//
 #pragma mark - 自定义返回按钮图片
 - (UIBarButtonItem*)customLeftBackButton
 {
@@ -46,7 +47,8 @@
                    action:@selector(popself)
          forControlEvents:UIControlEventTouchUpInside];
     
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"123" style:(UIBarButtonItemStyleDone) target:self action:@selector(popself)];
+    //[[UIBarButtonItem alloc] initWithCustomView:backButton];
     
     return backItem;
 }
@@ -58,22 +60,22 @@
 }
 
 #pragma mark - 用图片设置导航背景
-+ (void)initialize
-{
-    //取出设置主题的对象
-    UINavigationBar *navBar = [UINavigationBar appearance];
-    
-    //设置导航栏的背景图片
-//    NSString *navBarBg = nil;
-//    navBarBg = @"nav_back";
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-//    [navBar setBackgroundImage:[UIImage imageNamed:navBarBg] forBarMetrics:UIBarMetricsDefault];
-//    self.gk_navBarAlpha = 1.0;
-//    self.gk_navigationBar.backgroundColor = UIColor.hex_FFFFFF;
-//    self.gk_navTitleFont = [UIFont fontWith_DINAlternateFont_Bold_fontSize:36];
-    //标题颜色
-    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-}
+//+ (void)initialize
+//{
+//    //取出设置主题的对象
+//    UINavigationBar *navBar = [UINavigationBar appearance];
+//
+//    //设置导航栏的背景图片
+////    NSString *navBarBg = nil;
+////    navBarBg = @"nav_back";
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+////    [navBar setBackgroundImage:[UIImage imageNamed:navBarBg] forBarMetrics:UIBarMetricsDefault];
+////    self.gk_navBarAlpha = 1.0;
+////    self.gk_navigationBar.backgroundColor = UIColor.hex_FFFFFF;
+////    self.gk_navTitleFont = [UIFont fontWith_DINAlternateFont_Bold_fontSize:36];
+//    //标题颜色
+//    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//}
 
 
 @end

@@ -156,8 +156,7 @@
             
             [v mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.right.bottom.mas_equalTo(self);
-//                NSLog(@"kTabBarHeight = %d", kTabBarHeight);
-//                NSLog(@"kTabBarHeight = %f", kScreenH);
+
                 make.height.mas_equalTo(kTabBarHeight-45);
             }];
             

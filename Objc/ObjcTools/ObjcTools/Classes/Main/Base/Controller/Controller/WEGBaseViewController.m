@@ -58,10 +58,6 @@
     return self.gk_statusBarStyle;
 }
 
-//+ (void)showMsg:(NSString *)message
-//{
-//    [[XHHUDTools tools] showShortTips:message];
-//}
 
 
 
