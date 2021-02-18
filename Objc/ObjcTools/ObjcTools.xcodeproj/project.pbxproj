@@ -319,7 +319,7 @@
 		4C62367D25C94C3D007366EE /* ObjcTools */ = {
 			isa = PBXGroup;
 			children = (
-				4C623AB525CBE392007366EE /* MainClass */,
+				4C8BBE1C25DE0B38006F6BBD /* MainClass */,
 				4C62371225C95B37007366EE /* Util */,
 				4C6236DC25C94FAF007366EE /* Libs */,
 				4C6236DB25C94FA9007366EE /* Common */,
@@ -818,31 +818,6 @@
 			path = NullSafe;
 			sourceTree = "<group>";
 		};
-		4C623AB525CBE392007366EE /* MainClass */ = {
-			isa = PBXGroup;
-			children = (
-				4C623ABF25CBE447007366EE /* Instance */,
-				4C623AB625CBE3CD007366EE /* Category */,
-			);
-			name = MainClass;
-			sourceTree = "<group>";
-		};
-		4C623AB625CBE3CD007366EE /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				4C623AC025CBE47A007366EE /* Color+Extension.swift */,
-			);
-			name = Category;
-			sourceTree = "<group>";
-		};
-		4C623ABF25CBE447007366EE /* Instance */ = {
-			isa = PBXGroup;
-			children = (
-				4C623AB725CBE3D3007366EE /* ToolInstance.swift */,
-			);
-			name = Instance;
-			sourceTree = "<group>";
-		};
 		4C623AC825CBEEC0007366EE /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -991,6 +966,31 @@
 				4C623D2C25CD4DFC007366EE /* XHRACViewController.m */,
 			);
 			path = RAC;
+			sourceTree = "<group>";
+		};
+		4C8BBE1C25DE0B38006F6BBD /* MainClass */ = {
+			isa = PBXGroup;
+			children = (
+				4C8BBE1E25DE0B64006F6BBD /* Instance */,
+				4C8BBE1D25DE0B5A006F6BBD /* Category */,
+			);
+			path = MainClass;
+			sourceTree = "<group>";
+		};
+		4C8BBE1D25DE0B5A006F6BBD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4C623AC025CBE47A007366EE /* Color+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4C8BBE1E25DE0B64006F6BBD /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				4C623AB725CBE3D3007366EE /* ToolInstance.swift */,
+			);
+			path = Instance;
 			sourceTree = "<group>";
 		};
 		EE06F6045937D448FDB8DF01 /* Pods */ = {
