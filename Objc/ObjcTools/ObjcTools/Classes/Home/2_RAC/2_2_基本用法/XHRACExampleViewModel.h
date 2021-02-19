@@ -6,11 +6,18 @@
 //  Copyright © 2021 wangergang. All rights reserved.
 //
 
-#import "WEGBaseViewController.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XHRACExampleViewModel : WEGBaseViewController
+@interface XHRACExampleViewModel : NSObject
+
++ (instancetype)shared;
+
+/// 
+@property (nonatomic, strong) RACCommand *cancelOrderCommand;
+
+- (void)setupRACCommand;
 
 @end
 

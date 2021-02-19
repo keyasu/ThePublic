@@ -8,11 +8,11 @@
     "tStr": "XHOptionEnumeViewController",
     "dStr": "位移枚举"
 }, {
-    "tStr": "",
-    "dStr": "描asd述"
+    "tStr": "XHPictureInPictureViewController",
+    "dStr": "画中画"
 }, {
-    "tStr": "",
-    "dStr": "描述"
+    "tStr": "XHGCDViewController",
+    "dStr": "GCD 示例"
 }, {
     "tStr": "",
     "dStr": "描述"

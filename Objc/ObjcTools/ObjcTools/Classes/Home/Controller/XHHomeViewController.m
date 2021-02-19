@@ -71,7 +71,7 @@
     
     UIViewController * vc = [[NSClassFromString(tStr) alloc] init];
     vc.gk_navTitle = dStr;
-    vc.gk_navBackgroundColor = UIColor.cyanColor;
+    
     [self pushToController:vc];
     
 }

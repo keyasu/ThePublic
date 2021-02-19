@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WEGBaseView : UIView
 
+///
+@property (nonatomic, assign) BOOL tapNoAction;
+
+- (void)setupUI ;
+
+- (void)prepareView ;
+
 @end
 
 NS_ASSUME_NONNULL_END

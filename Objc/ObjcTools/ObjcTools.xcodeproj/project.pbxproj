@@ -110,6 +110,13 @@
 		4C8BBEBF25DE12D5006F6BBD /* XHFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BBEBE25DE12D5006F6BBD /* XHFindViewController.swift */; };
 		4C8BBEC825DE1443006F6BBD /* XH_Home_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C8BBEC725DE1443006F6BBD /* XH_Home_list.json */; };
 		4C8BBEDD25DE15E3006F6BBD /* XHOptionEnumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BBEDC25DE15E3006F6BBD /* XHOptionEnumeViewController.m */; };
+		4CCF7A8625DF5E8000945503 /* XHRACExampleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7A8525DF5E8000945503 /* XHRACExampleViewModel.m */; };
+		4CCF7A8D25DF653400945503 /* XHGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7A8C25DF653400945503 /* XHGCDViewController.m */; };
+		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
+		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
+		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
+		4CFB41CB25DF492800D86EAD /* XHRACExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41CA25DF492800D86EAD /* XHRACExampleViewController.m */; };
+		4CFB41D425DF493D00D86EAD /* XHRACExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41D325DF493D00D86EAD /* XHRACExampleView.m */; };
 		A5D9D7A21281EF81D8416F18 /* Pods_ObjcTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */; };
 /* End PBXBuildFile section */
 
@@ -310,6 +317,19 @@
 		4C8BBEC725DE1443006F6BBD /* XH_Home_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XH_Home_list.json; sourceTree = "<group>"; };
 		4C8BBEDB25DE15E3006F6BBD /* XHOptionEnumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHOptionEnumeViewController.h; sourceTree = "<group>"; };
 		4C8BBEDC25DE15E3006F6BBD /* XHOptionEnumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHOptionEnumeViewController.m; sourceTree = "<group>"; };
+		4CCF7A8425DF5E8000945503 /* XHRACExampleViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACExampleViewModel.h; sourceTree = "<group>"; };
+		4CCF7A8525DF5E8000945503 /* XHRACExampleViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACExampleViewModel.m; sourceTree = "<group>"; };
+		4CCF7A8B25DF653400945503 /* XHGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHGCDViewController.h; sourceTree = "<group>"; };
+		4CCF7A8C25DF653400945503 /* XHGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHGCDViewController.m; sourceTree = "<group>"; };
+		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
+		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
+		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
+		4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHPictureInPictureViewController.m; sourceTree = "<group>"; };
+		4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pincture_in_picture.MP4; sourceTree = "<group>"; };
+		4CFB41C925DF492800D86EAD /* XHRACExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACExampleViewController.h; sourceTree = "<group>"; };
+		4CFB41CA25DF492800D86EAD /* XHRACExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACExampleViewController.m; sourceTree = "<group>"; };
+		4CFB41D225DF493D00D86EAD /* XHRACExampleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACExampleView.h; sourceTree = "<group>"; };
+		4CFB41D325DF493D00D86EAD /* XHRACExampleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACExampleView.m; sourceTree = "<group>"; };
 		702FF38F2BD5DA2F33C94C29 /* Pods-ObjcTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.debug.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.debug.xcconfig"; sourceTree = "<group>"; };
 		91123BEB521159F33E44D303 /* Pods-ObjcTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcTools.release.xcconfig"; path = "Target Support Files/Pods-ObjcTools/Pods-ObjcTools.release.xcconfig"; sourceTree = "<group>"; };
 		B61E26342B502838FAD8B445 /* Pods_ObjcTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -434,6 +454,7 @@
 		4C6236D925C94F96007366EE /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				4CFB41BF25DE67D700D86EAD /* Video */,
 				4C623B8325CBFC62007366EE /* Json */,
 				4C623AE525CBF32F007366EE /* plist */,
 				4C623ADF25CBF324007366EE /* pic */,
@@ -784,8 +805,10 @@
 		4C6239AD25CBD2A1007366EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4C8BBECF25DE15B7006F6BBD /* 3.位移枚举 */,
-				4C623D2225CD4DDE007366EE /* 2.RAC */,
+				4CCF7A8A25DF652300945503 /* 5_多线程 */,
+				4CFB41B225DE661F00D86EAD /* 4_PictureInPicture */,
+				4C8BBECF25DE15B7006F6BBD /* 3_位移枚举 */,
+				4C623D2225CD4DDE007366EE /* 2_RAC */,
 				4C623BD425CCD15F007366EE /* 1.ScreenShot */,
 				4C8BBEC625DE1443006F6BBD /* Json */,
 				4C623B7625CBFB2D007366EE /* Controller */,
@@ -1006,13 +1029,14 @@
 			path = UIResponder;
 			sourceTree = "<group>";
 		};
-		4C623D2225CD4DDE007366EE /* 2.RAC */ = {
+		4C623D2225CD4DDE007366EE /* 2_RAC */ = {
 			isa = PBXGroup;
 			children = (
-				4C623D2B25CD4DFC007366EE /* XHRACViewController.h */,
-				4C623D2C25CD4DFC007366EE /* XHRACViewController.m */,
+				4CFB41C825DF490900D86EAD /* 2_2_基本用法 */,
+				4CFB41A825DE518200D86EAD /* 2_1_元组 */,
+				4CFB41A725DE513600D86EAD /* Controller */,
 			);
-			path = 2.RAC;
+			path = 2_RAC;
 			sourceTree = "<group>";
 		};
 		4C8BBE1C25DE0B38006F6BBD /* MainClass */ = {
@@ -1112,13 +1136,70 @@
 			path = ObjcTools/Resouces/Json;
 			sourceTree = SOURCE_ROOT;
 		};
-		4C8BBECF25DE15B7006F6BBD /* 3.位移枚举 */ = {
+		4C8BBECF25DE15B7006F6BBD /* 3_位移枚举 */ = {
 			isa = PBXGroup;
 			children = (
 				4C8BBEDB25DE15E3006F6BBD /* XHOptionEnumeViewController.h */,
 				4C8BBEDC25DE15E3006F6BBD /* XHOptionEnumeViewController.m */,
 			);
-			path = "3.位移枚举";
+			path = "3_位移枚举";
+			sourceTree = "<group>";
+		};
+		4CCF7A8A25DF652300945503 /* 5_多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7A8B25DF653400945503 /* XHGCDViewController.h */,
+				4CCF7A8C25DF653400945503 /* XHGCDViewController.m */,
+			);
+			path = "5_多线程";
+			sourceTree = "<group>";
+		};
+		4CFB41A725DE513600D86EAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C623D2B25CD4DFC007366EE /* XHRACViewController.h */,
+				4C623D2C25CD4DFC007366EE /* XHRACViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CFB41A825DE518200D86EAD /* 2_1_元组 */ = {
+			isa = PBXGroup;
+			children = (
+				4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */,
+				4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */,
+			);
+			path = "2_1_元组";
+			sourceTree = "<group>";
+		};
+		4CFB41B225DE661F00D86EAD /* 4_PictureInPicture */ = {
+			isa = PBXGroup;
+			children = (
+				4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */,
+				4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */,
+			);
+			path = 4_PictureInPicture;
+			sourceTree = "<group>";
+		};
+		4CFB41BF25DE67D700D86EAD /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		4CFB41C825DF490900D86EAD /* 2_2_基本用法 */ = {
+			isa = PBXGroup;
+			children = (
+				4CFB41C925DF492800D86EAD /* XHRACExampleViewController.h */,
+				4CFB41CA25DF492800D86EAD /* XHRACExampleViewController.m */,
+				4CFB41D225DF493D00D86EAD /* XHRACExampleView.h */,
+				4CFB41D325DF493D00D86EAD /* XHRACExampleView.m */,
+				4CCF7A8425DF5E8000945503 /* XHRACExampleViewModel.h */,
+				4CCF7A8525DF5E8000945503 /* XHRACExampleViewModel.m */,
+			);
+			path = "2_2_基本用法";
 			sourceTree = "<group>";
 		};
 		EE06F6045937D448FDB8DF01 /* Pods */ = {
@@ -1245,6 +1326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */,
 				4C623AE125CBF32B007366EE /* live_poll_loading.gif in Resources */,
 				4C62368E25C94C3E007366EE /* LaunchScreen.storyboard in Resources */,
 				4C623B8525CBFC6A007366EE /* XH_Home_list.json in Resources */,
@@ -1374,16 +1456,20 @@
 				4C8BBE5125DE0D90006F6BBD /* XHEnum.swift in Sources */,
 				4C62371B25C95B93007366EE /* NSString+Extension.m in Sources */,
 				4C623A8025CBDBB4007366EE /* JPushInstance.m in Sources */,
+				4CCF7A8D25DF653400945503 /* XHGCDViewController.m in Sources */,
 				4C62376B25C95C85007366EE /* UITableViewCell+Extension.m in Sources */,
+				4CFB41CB25DF492800D86EAD /* XHRACExampleViewController.m in Sources */,
 				4C8BBE9325DE1071006F6BBD /* DefaultsKeys+Extension.swift in Sources */,
 				4C62395F25CBC14D007366EE /* BaseTabBar.m in Sources */,
 				4C623BE425CCD507007366EE /* BaseWebViewController.m in Sources */,
+				4CFB41D425DF493D00D86EAD /* XHRACExampleView.m in Sources */,
 				4C623B6425CBF802007366EE /* WEGBaseTBCell.m in Sources */,
 				4C623C6325CCEB8B007366EE /* UIButton+Action.m in Sources */,
 				4C8BBE4725DE0D5C006F6BBD /* XHDefine.swift in Sources */,
 				4C6236F225C9585E007366EE /* WEGBaseView.m in Sources */,
 				4C623B6A25CBF80C007366EE /* WEGBaseCLCell.m in Sources */,
 				4C623AB125CBE2C4007366EE /* ThirdExtension.swift in Sources */,
+				4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */,
 				4C8BBE7E25DE0E68006F6BBD /* View+Extension.swift in Sources */,
 				4C623AD725CBEEFC007366EE /* WEGBaseCLViewController.m in Sources */,
 				4C62372825C95BDF007366EE /* UIImageView+Extension.m in Sources */,
@@ -1391,6 +1477,7 @@
 				4C623D2D25CD4DFC007366EE /* XHRACViewController.m in Sources */,
 				4C8BBE2F25DE0C1D006F6BBD /* XHBaseViewController.swift in Sources */,
 				4C62370225C958A4007366EE /* WEGBaseViewController.m in Sources */,
+				4CCF7A8625DF5E8000945503 /* XHRACExampleViewModel.m in Sources */,
 				4C6238A225CB8442007366EE /* AppDelegate+Extension.m in Sources */,
 				4C62379D25C95E66007366EE /* UtilsMacro.m in Sources */,
 				4C623C5125CCDE23007366EE /* UINavigationController+Extension.m in Sources */,
@@ -1403,6 +1490,7 @@
 				4C62373B25C95C31007366EE /* UIFont+Extension.m in Sources */,
 				4C623A9A25CBDE70007366EE /* NSArray+Extension.m in Sources */,
 				4C8BBEBF25DE12D5006F6BBD /* XHFindViewController.swift in Sources */,
+				4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */,
 				4C8BBE3925DE0CEE006F6BBD /* String+Extension.swift in Sources */,
 				4C623A7925CBDB35007366EE /* XHProtocolResolver.m in Sources */,
 				4C8BBE6025DE0DEB006F6BBD /* Image+Extension.swift in Sources */,

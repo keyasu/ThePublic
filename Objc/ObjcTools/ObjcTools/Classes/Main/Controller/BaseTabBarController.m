@@ -79,7 +79,6 @@
     
     [nav.tabBarItem setImage:image];
     
-    
     UIImage *selectedImage = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [nav.tabBarItem setSelectedImage:selectedImage];
     nav.tabBarItem.title = tittle;

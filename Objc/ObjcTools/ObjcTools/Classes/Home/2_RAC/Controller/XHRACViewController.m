@@ -71,7 +71,9 @@
     XHHomeViewModel * model = [self.dataCource SafeObjectAt:indexPath.row];
     NSString *tStr = model.tStr;
     NSString *dStr = model.dStr;
-    
+    if ([tStr isBlankString]) {
+        return;
+    }
     UIViewController * vc = [[NSClassFromString(tStr) alloc] init];
     vc.gk_navTitle = dStr;
     
@@ -85,13 +87,7 @@
 - (NSArray *)getArrray {
     NSArray * arr = @[
         @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
+        @{@"tStr": @"XHRACExampleViewController", @"dStr": @"基本用法"},
     ];
     
     return arr;

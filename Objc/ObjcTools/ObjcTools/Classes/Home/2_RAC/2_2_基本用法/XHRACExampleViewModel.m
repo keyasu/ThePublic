@@ -14,19 +14,41 @@
 
 @implementation XHRACExampleViewModel
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
++ (instancetype)shared {
+    static XHRACExampleViewModel * viewModel = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        viewModel = [[XHRACExampleViewModel alloc] init];
+    });
+    return viewModel;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+-(void)setupRACCommand
+{
+    @weakify(self);
+//    self.cancelOrderCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+//        @strongify(self);
+//
+//        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//
+//        }];
+//    }];
+//    self.cancelOrderCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+//        return [RACSignal createSignal:^RACDisposable *(id subscriber) {
+//            @strongify(self);
+//            self.cancelApi.setParams(input);
+//            [[YXRequestClient sharedClient] loadDataWithApi:self.cancelApi successBlock:^(NSDictionary *result) {
+//                [subscriber sendNext:result];
+//                [subscriber sendCompleted];
+//            } failureBlock:^(NSError *error) {
+//                [subscriber sendError:error];
+//            }];
+//            return nil;
+//            }];
+//    }];
 }
-*/
+
 
 @end
