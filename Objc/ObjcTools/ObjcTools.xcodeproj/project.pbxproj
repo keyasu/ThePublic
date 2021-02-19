@@ -118,6 +118,10 @@
 		4CCF7AB025DF87BE00945503 /* XHOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7AAF25DF87BE00945503 /* XHOperationViewController.m */; };
 		4CCF7ABC25DF8B5800945503 /* XHCustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7ABB25DF8B5800945503 /* XHCustomOperation.m */; };
 		4CCF7AC225DF8B6100945503 /* XHCustomThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7AC125DF8B6100945503 /* XHCustomThread.m */; };
+		4CCF7AD725DFB7E400945503 /* XHLock9PointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7AD625DFB7E400945503 /* XHLock9PointViewController.m */; };
+		4CCF7AE025DFB7EE00945503 /* XHLock9PointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7ADF25DFB7EE00945503 /* XHLock9PointView.m */; };
+		4CCF7AE825DFB94700945503 /* XHUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7AE725DFB94700945503 /* XHUnlockViewController.m */; };
+		4CCF7AF225DFBC1600945503 /* XHLocalAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7AF125DFBC1600945503 /* XHLocalAuthViewController.m */; };
 		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
 		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
 		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
@@ -339,6 +343,14 @@
 		4CCF7ABB25DF8B5800945503 /* XHCustomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHCustomOperation.m; sourceTree = "<group>"; };
 		4CCF7AC025DF8B6100945503 /* XHCustomThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHCustomThread.h; sourceTree = "<group>"; };
 		4CCF7AC125DF8B6100945503 /* XHCustomThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHCustomThread.m; sourceTree = "<group>"; };
+		4CCF7AD525DFB7E400945503 /* XHLock9PointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHLock9PointViewController.h; sourceTree = "<group>"; };
+		4CCF7AD625DFB7E400945503 /* XHLock9PointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHLock9PointViewController.m; sourceTree = "<group>"; };
+		4CCF7ADE25DFB7EE00945503 /* XHLock9PointView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHLock9PointView.h; sourceTree = "<group>"; };
+		4CCF7ADF25DFB7EE00945503 /* XHLock9PointView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHLock9PointView.m; sourceTree = "<group>"; };
+		4CCF7AE625DFB94700945503 /* XHUnlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHUnlockViewController.h; sourceTree = "<group>"; };
+		4CCF7AE725DFB94700945503 /* XHUnlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHUnlockViewController.m; sourceTree = "<group>"; };
+		4CCF7AF025DFBC1600945503 /* XHLocalAuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHLocalAuthViewController.h; sourceTree = "<group>"; };
+		4CCF7AF125DFBC1600945503 /* XHLocalAuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHLocalAuthViewController.m; sourceTree = "<group>"; };
 		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
 		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
 		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
@@ -823,6 +835,7 @@
 		4C6239AD25CBD2A1007366EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4CCF7AD425DFB7CE00945503 /* 6_9宫格解锁 */,
 				4CCF7A8A25DF652300945503 /* 5_多线程 */,
 				4CFB41B225DE661F00D86EAD /* 4_PictureInPicture */,
 				4C8BBECF25DE15B7006F6BBD /* 3_位移枚举 */,
@@ -1224,6 +1237,45 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4CCF7AD425DFB7CE00945503 /* 6_9宫格解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7AEF25DFBC0400945503 /* 6_2_指纹解锁 */,
+				4CCF7AE525DFB92A00945503 /* 6_1_9宫格解锁 */,
+				4CCF7AE425DFB91B00945503 /* Controller */,
+			);
+			path = "6_9宫格解锁";
+			sourceTree = "<group>";
+		};
+		4CCF7AE425DFB91B00945503 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7AE625DFB94700945503 /* XHUnlockViewController.h */,
+				4CCF7AE725DFB94700945503 /* XHUnlockViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CCF7AE525DFB92A00945503 /* 6_1_9宫格解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7AD525DFB7E400945503 /* XHLock9PointViewController.h */,
+				4CCF7AD625DFB7E400945503 /* XHLock9PointViewController.m */,
+				4CCF7ADE25DFB7EE00945503 /* XHLock9PointView.h */,
+				4CCF7ADF25DFB7EE00945503 /* XHLock9PointView.m */,
+			);
+			path = "6_1_9宫格解锁";
+			sourceTree = "<group>";
+		};
+		4CCF7AEF25DFBC0400945503 /* 6_2_指纹解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7AF025DFBC1600945503 /* XHLocalAuthViewController.h */,
+				4CCF7AF125DFBC1600945503 /* XHLocalAuthViewController.m */,
+			);
+			path = "6_2_指纹解锁";
+			sourceTree = "<group>";
+		};
 		4CFB41A725DE513600D86EAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1469,6 +1521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCF7AD725DFB7E400945503 /* XHLock9PointViewController.m in Sources */,
 				4C6239D025CBD3D9007366EE /* XHHUDTools.m in Sources */,
 				4C623B3125CBF483007366EE /* UIImage+Common.m in Sources */,
 				4C8BBE8825DE0E88006F6BBD /* View+ViewChainable.swift in Sources */,
@@ -1564,8 +1617,10 @@
 				4C62373B25C95C31007366EE /* UIFont+Extension.m in Sources */,
 				4C623A9A25CBDE70007366EE /* NSArray+Extension.m in Sources */,
 				4C8BBEBF25DE12D5006F6BBD /* XHFindViewController.swift in Sources */,
+				4CCF7AE025DFB7EE00945503 /* XHLock9PointView.m in Sources */,
 				4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */,
 				4CCF7AB025DF87BE00945503 /* XHOperationViewController.m in Sources */,
+				4CCF7AE825DFB94700945503 /* XHUnlockViewController.m in Sources */,
 				4C8BBE3925DE0CEE006F6BBD /* String+Extension.swift in Sources */,
 				4C623A7925CBDB35007366EE /* XHProtocolResolver.m in Sources */,
 				4C8BBE6025DE0DEB006F6BBD /* Image+Extension.swift in Sources */,
@@ -1574,6 +1629,7 @@
 				4C623B5025CBF618007366EE /* NSString+Common.m in Sources */,
 				4C8BBEA225DE10AF006F6BBD /* TableView+Extension.swift in Sources */,
 				4CCF7A9A25DF871400945503 /* XHQueueViewController.m in Sources */,
+				4CCF7AF225DFBC1600945503 /* XHLocalAuthViewController.m in Sources */,
 				4C623AC125CBE47A007366EE /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

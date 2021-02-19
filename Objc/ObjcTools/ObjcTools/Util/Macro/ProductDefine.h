@@ -31,6 +31,8 @@ method: %s\n%s\n\
 #endif
 
 
+#define ShowMsg(__VA_ARGS__) [self showMsg:__VA_ARGS__];
+
 
 #ifdef DEBUG
 ///在测试环境

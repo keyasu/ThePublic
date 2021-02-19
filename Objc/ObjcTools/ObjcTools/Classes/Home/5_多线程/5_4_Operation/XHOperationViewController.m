@@ -50,15 +50,15 @@
         NSString * tStr = [arr SafeObjectAt:i];
         //
         UIButton * btn = [[UIButton buttonTitle:tStr TitleColor:UIColor.hex_00184C FontSize:36 CornerRadius:0 BackgroundColor:UIColor.hex_random] touchUpInsideAction:^{
-            [self btnActioinWith:i];
+            [self btnActioinWith:i+1];
         }];
         
         [self.view addSubview:btn];
         
         CGFloat width  = i<6 ? kNewWidth(750) : kNewWidth(750/4);
         CGFloat height = i<6 ? kNewHeight(100) : kNewHeight(100);
-        CGFloat btnX   = i<6 ? kNewHeight(0) : kNewHeight(750/2);
-        CGFloat btnY   = i<6 ? kNewHeight(200)*(i+1) : kNewHeight(200)*(i-5)+kNewHeight(50);
+        CGFloat btnX   = i<6 ? kNewHeight(0) : kNewHeight(750/4)*(i-6);
+        CGFloat btnY   = i<6 ? kNewHeight(100)+kNewHeight(120)*(i+1) : kNewHeight(200)*5;
         
         btn.frame = CGRectMake(btnX, btnY, width, height);
                 
@@ -73,20 +73,17 @@
         @"同步函数＋串行队列",
         @"异步函数＋主队列",
         @"同步函数＋主队列",
-        @"GCD_Group",
-        @"GCD_Enter_group",
-        @"GCD_Barrier",
-        @"GCD_Semaphore",
-        @"GCD_Apply"];
+        @"开始",
+        @"暂停",
+        @"继续",
+        @"取消"];
     return arr;
 }
 
 - (void)btnActioinWith:(int)i {
     switch (i) {
         case 1:
-        {
             [self invocationOperationWithQueue];
-        }
             break;
         case 2:
             [self blockOperationWithQueue];
@@ -124,9 +121,9 @@
 /// 方案 1
 - (void)invocationOperationWithQueue {
     
-    NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"氮磷钾"];
-    NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"氮磷钾"];
-    NSInvocationOperation *op3 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"氮磷钾"];
+    NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"擎天柱1"];
+    NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"擎天柱2"];
+    NSInvocationOperation *op3 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"擎天柱3"];
     
     //创建队列
     /*
@@ -292,7 +289,7 @@
     
     NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
 
-        NSURL *url = [NSURL URLWithString:@"http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1601/07/c7/17318133_1452142939893_mthumb.jpg"];
+        NSURL *url = [NSURL URLWithString:@"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1936271708,2299077308&fm=26&gp=0.jpg"];
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *img = [UIImage imageWithData:data];
         NSLog(@"线程 %@", [NSThread currentThread]);

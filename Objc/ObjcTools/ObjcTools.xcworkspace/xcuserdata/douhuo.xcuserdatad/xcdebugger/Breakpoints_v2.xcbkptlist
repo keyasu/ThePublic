@@ -46,10 +46,10 @@
             filePath = "ObjcTools/Classes/Home/5_&#x591a;&#x7ebf;&#x7a0b;/5_4_Operation/XHOperationViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
-            landmarkName = "XHOperationViewController"
-            landmarkType = "3">
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "-operationMaxCount"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
