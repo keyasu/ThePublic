@@ -1,31 +1,22 @@
 //
-//  XHRACViewController.m
+//  XHPictureInPictureViewController.m
 //  ObjcTools
 //
-//  Created by douhuo on 2021/2/5.
+//  Created by douhuo on 2021/2/18.
 //  Copyright © 2021 wangergang. All rights reserved.
 //
 
-#import "XHRACViewController.h"
+#import "XHPictureInPictureViewController.h"
 
-@interface XHRACViewController ()
+@interface XHPictureInPictureViewController ()
 
 @end
 
-@implementation XHRACViewController
+@implementation XHPictureInPictureViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
-}
-
-- (void)demo1 {
-    /* 元祖 */
-    RACTuple *tuple = [RACTuple tupleWithObjects:@"firstObject",@"secondObject",@1, nil];
-    NSString *string = tuple[1];
-    NSLog(@"%@", string);
 }
 
 /*

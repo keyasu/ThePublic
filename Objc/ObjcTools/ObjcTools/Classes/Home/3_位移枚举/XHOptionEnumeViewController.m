@@ -33,6 +33,7 @@ typedef NS_OPTIONS(NSInteger, OptionType) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self showMsg:@"详情见代码"];
 }
 
 
