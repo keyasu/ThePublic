@@ -1,24 +1,24 @@
 //
-//  XHRACViewController.m
+//  XHQueueViewController.m
 //  ObjcTools
 //
-//  Created by douhuo on 2021/2/5.
+//  Created by douhuo on 2021/2/19.
 //  Copyright © 2021 wangergang. All rights reserved.
 //
 
-#import "XHRACViewController.h"
+#import "XHQueueViewController.h"
 #import "XHHomeViewCell.h"
 #import "XHHomeViewModel.h"
 
 
-@interface XHRACViewController ()
+@interface XHQueueViewController ()
 
 ///
 @property (nonatomic, strong) NSMutableArray *dataCource;
 
 @end
 
-@implementation XHRACViewController
+@implementation XHQueueViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +35,7 @@
     self.dataCource = [NSMutableArray arrayWithArray:models];
     [self reloadTBView];
 }
+
 
 // MARK: - 这个方法给子类设置 tableView 的 样式 ，frame pageSize 等
 /// 这个方法给子类设置 tableView 的 样式 ，frame pageSize 等
@@ -83,8 +84,11 @@
 
 - (NSArray *)getArrray {
     NSArray * arr = @[
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
-        @{@"tStr": @"XHRACExampleViewController", @"dStr": @"基本用法"},
+        @{@"tStr": @"XHGCDViewController", @"dStr": @"GCD"},
+        @{@"tStr": @"XHThreadViewController", @"dStr": @"Thread"},
+        @{@"tStr": @"XHThreadSafeViewController", @"dStr": @"ThreadSafe"},
+        @{@"tStr": @"XHOperationViewController", @"dStr": @"Operation"},
+        
     ];
     
     return arr;

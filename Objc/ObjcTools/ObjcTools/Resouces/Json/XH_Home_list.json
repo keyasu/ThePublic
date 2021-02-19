@@ -11,8 +11,8 @@
     "tStr": "XHPictureInPictureViewController",
     "dStr": "画中画"
 }, {
-    "tStr": "XHGCDViewController",
-    "dStr": "GCD 示例"
+    "tStr": "XHQueueViewController",
+    "dStr": "线程"
 }, {
     "tStr": "",
     "dStr": "描述"
