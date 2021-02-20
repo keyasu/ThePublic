@@ -126,6 +126,11 @@
 		4CCF7B1B25E09A4500945503 /* XHRACLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B1A25E09A4500945503 /* XHRACLoginView.m */; };
 		4CCF7B2225E09B2C00945503 /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B2125E09B2C00945503 /* UITextField+Extension.m */; };
 		4CCF7B2C25E0A35300945503 /* XHRACTFLengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B2B25E0A35300945503 /* XHRACTFLengthViewController.m */; };
+		4CCF7B3925E0B79300945503 /* XHDeviceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B3825E0B79300945503 /* XHDeviceDataViewController.m */; };
+		4CCF7B4025E0BAEF00945503 /* XHDeviceDataLocalInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B3F25E0BAEF00945503 /* XHDeviceDataLocalInstance.m */; };
+		4CCF7B4625E0BB0300945503 /* XHDeviceDataNetworkInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B4525E0BB0300945503 /* XHDeviceDataNetworkInstance.m */; };
+		4CCF7B4C25E0BD6000945503 /* XHDeviceDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B4B25E0BD6000945503 /* XHDeviceDataViewCell.m */; };
+		4CCF7B5225E0BD8800945503 /* XHDeviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */; };
 		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
 		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
 		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
@@ -363,6 +368,16 @@
 		4CCF7B2125E09B2C00945503 /* UITextField+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
 		4CCF7B2A25E0A35300945503 /* XHRACTFLengthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTFLengthViewController.h; sourceTree = "<group>"; };
 		4CCF7B2B25E0A35300945503 /* XHRACTFLengthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTFLengthViewController.m; sourceTree = "<group>"; };
+		4CCF7B3725E0B79300945503 /* XHDeviceDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataViewController.h; sourceTree = "<group>"; };
+		4CCF7B3825E0B79300945503 /* XHDeviceDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataViewController.m; sourceTree = "<group>"; };
+		4CCF7B3E25E0BAEF00945503 /* XHDeviceDataLocalInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataLocalInstance.h; sourceTree = "<group>"; };
+		4CCF7B3F25E0BAEF00945503 /* XHDeviceDataLocalInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataLocalInstance.m; sourceTree = "<group>"; };
+		4CCF7B4425E0BB0300945503 /* XHDeviceDataNetworkInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataNetworkInstance.h; sourceTree = "<group>"; };
+		4CCF7B4525E0BB0300945503 /* XHDeviceDataNetworkInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataNetworkInstance.m; sourceTree = "<group>"; };
+		4CCF7B4A25E0BD6000945503 /* XHDeviceDataViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataViewCell.h; sourceTree = "<group>"; };
+		4CCF7B4B25E0BD6000945503 /* XHDeviceDataViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataViewCell.m; sourceTree = "<group>"; };
+		4CCF7B5025E0BD8800945503 /* XHDeviceDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataModel.h; sourceTree = "<group>"; };
+		4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataModel.m; sourceTree = "<group>"; };
 		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
 		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
 		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
@@ -516,6 +531,7 @@
 		4C6236DB25C94FA9007366EE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4CCF7B3D25E0BA5800945503 /* DeviceData */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -609,8 +625,8 @@
 		4C62371225C95B37007366EE /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				4C623B7825CBFBDA007366EE /* Instance */,
 				4C6237B025C9609D007366EE /* Macro */,
+				4C623B7825CBFBDA007366EE /* Instance */,
 				4C62379A25C95E46007366EE /* Config */,
 				4C62371525C95B49007366EE /* Helper */,
 				4C62371425C95B44007366EE /* Manager */,
@@ -848,7 +864,8 @@
 		4C6239AD25CBD2A1007366EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4CCF7AD425DFB7CE00945503 /* 6_9宫格解锁 */,
+				4CCF7B3325E0B74B00945503 /* 7_设备信息 */,
+				4CCF7AD425DFB7CE00945503 /* 6_解锁 */,
 				4CCF7A8A25DF652300945503 /* 5_多线程 */,
 				4CFB41B225DE661F00D86EAD /* 4_PictureInPicture */,
 				4C8BBECF25DE15B7006F6BBD /* 3_位移枚举 */,
@@ -1252,14 +1269,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		4CCF7AD425DFB7CE00945503 /* 6_9宫格解锁 */ = {
+		4CCF7AD425DFB7CE00945503 /* 6_解锁 */ = {
 			isa = PBXGroup;
 			children = (
 				4CCF7AEF25DFBC0400945503 /* 6_2_指纹解锁 */,
 				4CCF7AE525DFB92A00945503 /* 6_1_9宫格解锁 */,
 				4CCF7AE425DFB91B00945503 /* Controller */,
 			);
-			path = "6_9宫格解锁";
+			path = "6_解锁";
 			sourceTree = "<group>";
 		};
 		4CCF7AE425DFB91B00945503 /* Controller */ = {
@@ -1318,6 +1335,30 @@
 				4CCF7B2B25E0A35300945503 /* XHRACTFLengthViewController.m */,
 			);
 			path = "2_4_字符长度限制";
+			sourceTree = "<group>";
+		};
+		4CCF7B3325E0B74B00945503 /* 7_设备信息 */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7B3725E0B79300945503 /* XHDeviceDataViewController.h */,
+				4CCF7B3825E0B79300945503 /* XHDeviceDataViewController.m */,
+				4CCF7B4A25E0BD6000945503 /* XHDeviceDataViewCell.h */,
+				4CCF7B4B25E0BD6000945503 /* XHDeviceDataViewCell.m */,
+				4CCF7B5025E0BD8800945503 /* XHDeviceDataModel.h */,
+				4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */,
+			);
+			path = "7_设备信息";
+			sourceTree = "<group>";
+		};
+		4CCF7B3D25E0BA5800945503 /* DeviceData */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7B3E25E0BAEF00945503 /* XHDeviceDataLocalInstance.h */,
+				4CCF7B3F25E0BAEF00945503 /* XHDeviceDataLocalInstance.m */,
+				4CCF7B4425E0BB0300945503 /* XHDeviceDataNetworkInstance.h */,
+				4CCF7B4525E0BB0300945503 /* XHDeviceDataNetworkInstance.m */,
+			);
+			path = DeviceData;
 			sourceTree = "<group>";
 		};
 		4CFB41A725DE513600D86EAD /* Controller */ = {
@@ -1612,6 +1653,7 @@
 				4C8BBE9D25DE109A006F6BBD /* NavigationController+Extension.swift in Sources */,
 				4C62372E25C95BE6007366EE /* UIImage+Extension.m in Sources */,
 				4C623AB825CBE3D3007366EE /* ToolInstance.swift in Sources */,
+				4CCF7B4625E0BB0300945503 /* XHDeviceDataNetworkInstance.m in Sources */,
 				4C623B2B25CBF444007366EE /* UIView+Animation.m in Sources */,
 				4C62395925CBC106007366EE /* BaseTabBarController.m in Sources */,
 				4C623C4825CCDC0C007366EE /* UIResponder+Extension.m in Sources */,
@@ -1677,6 +1719,7 @@
 				4C8BBEAF25DE1287006F6BBD /* XHMeViewController.swift in Sources */,
 				4C62378725C95DD1007366EE /* Test.swift in Sources */,
 				4C623A7225CBD9F7007366EE /* UIView+Addition.m in Sources */,
+				4CCF7B5225E0BD8800945503 /* XHDeviceDataModel.m in Sources */,
 				4C8BBE4C25DE0D72006F6BBD /* XHToolExtension.swift in Sources */,
 				4CCF7AA125DF877B00945503 /* XHThreadViewController.m in Sources */,
 				4CCF7B2225E09B2C00945503 /* UITextField+Extension.m in Sources */,
@@ -1686,14 +1729,17 @@
 				4CCF7AE025DFB7EE00945503 /* XHLock9PointView.m in Sources */,
 				4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */,
 				4CCF7AB025DF87BE00945503 /* XHOperationViewController.m in Sources */,
+				4CCF7B3925E0B79300945503 /* XHDeviceDataViewController.m in Sources */,
 				4CCF7AE825DFB94700945503 /* XHUnlockViewController.m in Sources */,
 				4C8BBE3925DE0CEE006F6BBD /* String+Extension.swift in Sources */,
 				4C623A7925CBDB35007366EE /* XHProtocolResolver.m in Sources */,
+				4CCF7B4C25E0BD6000945503 /* XHDeviceDataViewCell.m in Sources */,
 				4C8BBE6025DE0DEB006F6BBD /* Image+Extension.swift in Sources */,
 				4C62369125C94C3E007366EE /* main.m in Sources */,
 				4C6237A925C95FEA007366EE /* Constants.m in Sources */,
 				4C623B5025CBF618007366EE /* NSString+Common.m in Sources */,
 				4C8BBEA225DE10AF006F6BBD /* TableView+Extension.swift in Sources */,
+				4CCF7B4025E0BAEF00945503 /* XHDeviceDataLocalInstance.m in Sources */,
 				4CCF7A9A25DF871400945503 /* XHQueueViewController.m in Sources */,
 				4CCF7AF225DFBC1600945503 /* XHLocalAuthViewController.m in Sources */,
 				4C623AC125CBE47A007366EE /* Color+Extension.swift in Sources */,

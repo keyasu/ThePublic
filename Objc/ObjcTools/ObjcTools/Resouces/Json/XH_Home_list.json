@@ -16,4 +16,8 @@
 }, {
     "tStr": "XHUnlockViewController",
     "dStr": "解锁"
-}]
+}, {
+    "tStr": "XHDeviceDataViewController",
+    "dStr": "设备信息"
+}
+]
