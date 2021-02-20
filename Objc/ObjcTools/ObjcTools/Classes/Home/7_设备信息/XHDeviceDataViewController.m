@@ -8,8 +8,8 @@
 
 #import "XHDeviceDataViewController.h"
 #import "XHDeviceDataViewCell.h"
-#import "XHHomeViewModel.h"
-
+#import "XHDeviceDataModel.h"
+#import "XHDeviceDataNetworkInstance.h"
 
 @interface XHDeviceDataViewController ()
 
@@ -29,9 +29,8 @@
 
 - (void)setupUI
 {
-    NSArray * jsonList = [self getArrray];
-    NSArray * models = [NSArray yy_modelArrayWithClass:[XHHomeViewModel class] json:jsonList];
-    self.dataCource = [NSMutableArray arrayWithArray:models];
+    
+    self.dataCource = [self getArrray];
     [self reloadTBView];
 }
 
@@ -69,16 +68,19 @@
     XHDeviceDataViewCell * cell = [[XHDeviceDataViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:[XHDeviceDataViewCell cellReuseIdentifier]];
     NSArray * sectionData = [self.dataCource SafeObjectAt:indexPath.section];
     if (indexPath.row < sectionData.count) {
-        XHHomeViewModel * model = [sectionData SafeObjectAt:indexPath.row];
+        XHDeviceDataModel * model = [sectionData SafeObjectAt:indexPath.row];
         cell.tLabel.text = [NSString stringWithFormat:@"%ld - %@", (long)indexPath.row+1, model.dStr];
     }
     
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    XHHomeViewModel * model = [self.dataCource SafeObjectAt:indexPath.row];
+    NSArray * sectionData = [self.dataCource SafeObjectAt:indexPath.section];
+    XHDeviceDataModel * model = [sectionData SafeObjectAt:indexPath.row];
+    
     NSString *tStr = model.tStr;
     NSString *dStr = model.dStr;
+    
     if ([tStr isBlankString]) {
         return;
     }
@@ -92,23 +94,34 @@
     return kNewHeight(100);
 }
 
-- (NSArray *)getArrray {
+- (NSMutableArray *)getArrray {
     NSArray * netWorkData = @[
-        @"",
-        @"",
-    ];
-    NSArray * localData = @[
-        @"",
-        @"",
-    ];
-    NSArray * arr = @[
-        netWorkData,
-        localData
+        @{@"tStr": @"当前网络类型", @"dStr": [XHDeviceDataNetworkInstance getNetworkType]},
+        @{@"tStr": @"当前网络类型", @"dStr": [XHDeviceDataNetworkInstance getNetworkTypeByReachability]},
+        @{@"tStr": @"Wifi信息", @"dStr": [NSString stringWithFormat:@"%@", [XHDeviceDataNetworkInstance fetchSSIDInfo]]},
+        @{@"tStr": @"WIFI名字", @"dStr": [XHDeviceDataNetworkInstance getWifiSSID]},
+        @{@"tStr": @"WIFi的MAC地址", @"dStr": [XHDeviceDataNetworkInstance getWifiBSSID]},
+        @{@"tStr": @"Wifi信号强度", @"dStr": [XHDeviceDataNetworkInstance getWifiSignalStrength]},
+        @{@"tStr": @"设备IP地址", @"dStr": [XHDeviceDataNetworkInstance getIPAddress]},
+        @{@"tStr": @"运营商类型", @"dStr": [XHDeviceDataNetworkInstance carrierName]},
     ];
     
-    return arr;
+    NSArray * localData = @[
+        @{@"tStr": @"XHLock9PointViewController", @"dStr": @"9宫格解锁"},
+        @{@"tStr": @"XHLock9PointViewController", @"dStr": @"9宫格解锁"},
+    ];
+    NSArray * netWorkDataModels = [NSArray yy_modelArrayWithClass:[XHDeviceDataModel class] json:netWorkData];
+    NSArray * localDataModels = [NSArray yy_modelArrayWithClass:[XHDeviceDataModel class] json:localData];
+    
+    NSArray * arr = @[
+        netWorkDataModels,
+        localDataModels
+    ];
+    ;
+    return [NSMutableArray arrayWithArray:arr];
 }
 
 
 @end
+
 

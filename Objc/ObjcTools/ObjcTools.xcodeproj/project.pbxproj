@@ -131,6 +131,7 @@
 		4CCF7B4625E0BB0300945503 /* XHDeviceDataNetworkInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B4525E0BB0300945503 /* XHDeviceDataNetworkInstance.m */; };
 		4CCF7B4C25E0BD6000945503 /* XHDeviceDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B4B25E0BD6000945503 /* XHDeviceDataViewCell.m */; };
 		4CCF7B5225E0BD8800945503 /* XHDeviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */; };
+		4CCF7B5B25E1062000945503 /* XHDeviceDataLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */; };
 		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
 		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
 		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
@@ -378,6 +379,8 @@
 		4CCF7B4B25E0BD6000945503 /* XHDeviceDataViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataViewCell.m; sourceTree = "<group>"; };
 		4CCF7B5025E0BD8800945503 /* XHDeviceDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataModel.h; sourceTree = "<group>"; };
 		4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataModel.m; sourceTree = "<group>"; };
+		4CCF7B5925E1062000945503 /* XHDeviceDataLocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataLocal.h; sourceTree = "<group>"; };
+		4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataLocal.m; sourceTree = "<group>"; };
 		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
 		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
 		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
@@ -1353,12 +1356,30 @@
 		4CCF7B3D25E0BA5800945503 /* DeviceData */ = {
 			isa = PBXGroup;
 			children = (
+				4CCF7B6025E107B300945503 /* Net */,
+				4CCF7B5F25E107B000945503 /* Local */,
+			);
+			path = DeviceData;
+			sourceTree = "<group>";
+		};
+		4CCF7B5F25E107B000945503 /* Local */ = {
+			isa = PBXGroup;
+			children = (
 				4CCF7B3E25E0BAEF00945503 /* XHDeviceDataLocalInstance.h */,
 				4CCF7B3F25E0BAEF00945503 /* XHDeviceDataLocalInstance.m */,
+				4CCF7B5925E1062000945503 /* XHDeviceDataLocal.h */,
+				4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		4CCF7B6025E107B300945503 /* Net */ = {
+			isa = PBXGroup;
+			children = (
 				4CCF7B4425E0BB0300945503 /* XHDeviceDataNetworkInstance.h */,
 				4CCF7B4525E0BB0300945503 /* XHDeviceDataNetworkInstance.m */,
 			);
-			path = DeviceData;
+			path = Net;
 			sourceTree = "<group>";
 		};
 		4CFB41A725DE513600D86EAD /* Controller */ = {
@@ -1667,6 +1688,7 @@
 				4CCF7B2C25E0A35300945503 /* XHRACTFLengthViewController.m in Sources */,
 				4C8BBE3425DE0CB9006F6BBD /* ViewController+Extension.swift in Sources */,
 				4C8BBE8E25DE1062006F6BBD /* Date+Extension.swift in Sources */,
+				4CCF7B5B25E1062000945503 /* XHDeviceDataLocal.m in Sources */,
 				4C623AA925CBDED8007366EE /* NullSafe.m in Sources */,
 				4C623B5D25CBF721007366EE /* GTMBase64.m in Sources */,
 				4C623AA325CBDE8D007366EE /* NSArray+SafeObjectAt.m in Sources */,
