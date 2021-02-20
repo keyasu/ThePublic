@@ -86,7 +86,8 @@
         @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
         @{@"tStr": @"XHRACExampleViewController", @"dStr": @"基本用法"},
         @{@"tStr": @"XHRACLoginViewController", @"dStr": @"登录页"},
-        
+        @{@"tStr": @"XHRACTFLengthViewController", @"dStr": @"输入框字符长度"},
+
     ];
     
     return arr;

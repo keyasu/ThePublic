@@ -52,5 +52,145 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECDAE110-2BDC-4723-BC97-6BA34DDA2FCB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjcTools/Classes/Home/2_RAC/2_3_&#x767b;&#x5f55;&#x9875;/XHRACLoginView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "-useRACMethod"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ECDAE110-2BDC-4723-BC97-6BA34DDA2FCB - 4dfa9db6b6153061"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[XHRACLoginView useRACMethod]_block_invoke_3.122"
+                  moduleName = "ObjcTools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/douhuo/Documents/github_my/ThePublic/Objc/ObjcTools/ObjcTools/Classes/Home/2_RAC/2_3_%E7%99%BB%E5%BD%95%E9%A1%B5/XHRACLoginView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "ECDAE110-2BDC-4723-BC97-6BA34DDA2FCB - 4c1b12f8328f34a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[XHRACLoginView useRACMethod]_block_invoke_4.125"
+                  moduleName = "ObjcTools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/douhuo/Documents/github_my/ThePublic/Objc/ObjcTools/ObjcTools/Classes/Home/2_RAC/2_3_%E7%99%BB%E5%BD%95%E9%A1%B5/XHRACLoginView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5763A2F4-E5B3-4D72-A0BF-15956DE28F0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjcTools/Classes/Home/2_RAC/2_3_&#x767b;&#x5f55;&#x9875;/XHRACLoginView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "-useRACMethod"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E9F4E89-B0A8-4D77-8EEF-94A212F501F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjcTools/Classes/Home/2_RAC/2_3_&#x767b;&#x5f55;&#x9875;/XHRACLoginView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "-loginCommand"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E9F4E89-B0A8-4D77-8EEF-94A212F501F1 - 58d6b139c6f27e2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[XHRACLoginView loginCommand]_block_invoke_2"
+                  moduleName = "ObjcTools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/douhuo/Documents/github_my/ThePublic/Objc/ObjcTools/ObjcTools/Classes/Home/2_RAC/2_3_%E7%99%BB%E5%BD%95%E9%A1%B5/XHRACLoginView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "2E9F4E89-B0A8-4D77-8EEF-94A212F501F1 - 58d6b139c6f07e74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[XHRACLoginView loginCommand]_block_invoke_3"
+                  moduleName = "ObjcTools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/douhuo/Documents/github_my/ThePublic/Objc/ObjcTools/ObjcTools/Classes/Home/2_RAC/2_3_%E7%99%BB%E5%BD%95%E9%A1%B5/XHRACLoginView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAB9E0AC-4E6C-4BF8-83C8-CED90F6B7A9D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjcTools/Classes/Home/2_RAC/2_3_&#x767b;&#x5f55;&#x9875;/XHRACLoginView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "-loginCommand"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "78BD6E6B-F62B-402F-87DC-296173C39B81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

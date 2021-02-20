@@ -7,8 +7,12 @@
 //
 
 #import "XHRACLoginViewController.h"
+#import "XHRACLoginView.h"
 
 @interface XHRACLoginViewController ()
+
+/// 登录的UI
+@property (nonatomic, strong) XHRACLoginView *loginView;
 
 @end
 
@@ -19,14 +23,19 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupUI {
+    [self.view addSubview:self.loginView];
+    
 }
-*/
+
+- (XHRACLoginView *)loginView {
+    if (!_loginView) {
+        CGRect rect = CGRectMake(0, kNavigationBarHeight, kScreenW, kNewHeight(700));
+        XHRACLoginView * v = [[XHRACLoginView alloc] initWithFrame:rect];
+        
+        _loginView = v;
+    }
+    return _loginView;
+}
 
 @end

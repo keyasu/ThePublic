@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import "WEGExcessiveViewController.h"
-
+#import "AppDelegate+Extension.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +22,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
         
     [self toRootVC];
+        
+    [self setUserDefalueData];
     
     return YES;
 }

@@ -125,6 +125,7 @@
 		4CCF7B1225E09A2300945503 /* XHRACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B1125E09A2300945503 /* XHRACLoginViewController.m */; };
 		4CCF7B1B25E09A4500945503 /* XHRACLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B1A25E09A4500945503 /* XHRACLoginView.m */; };
 		4CCF7B2225E09B2C00945503 /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B2125E09B2C00945503 /* UITextField+Extension.m */; };
+		4CCF7B2C25E0A35300945503 /* XHRACTFLengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B2B25E0A35300945503 /* XHRACTFLengthViewController.m */; };
 		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
 		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
 		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
@@ -360,6 +361,8 @@
 		4CCF7B1A25E09A4500945503 /* XHRACLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACLoginView.m; sourceTree = "<group>"; };
 		4CCF7B2025E09B2C00945503 /* UITextField+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
 		4CCF7B2125E09B2C00945503 /* UITextField+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
+		4CCF7B2A25E0A35300945503 /* XHRACTFLengthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTFLengthViewController.h; sourceTree = "<group>"; };
+		4CCF7B2B25E0A35300945503 /* XHRACTFLengthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTFLengthViewController.m; sourceTree = "<group>"; };
 		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
 		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
 		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
@@ -1073,6 +1076,7 @@
 		4C623D2225CD4DDE007366EE /* 2_RAC */ = {
 			isa = PBXGroup;
 			children = (
+				4CCF7B2925E0A32400945503 /* 2_4_字符长度限制 */,
 				4CCF7B0F25E09A0500945503 /* 2_3_登录页 */,
 				4CFB41C825DF490900D86EAD /* 2_2_基本用法 */,
 				4CFB41A825DE518200D86EAD /* 2_1_元组 */,
@@ -1305,6 +1309,15 @@
 				4CCF7B2125E09B2C00945503 /* UITextField+Extension.m */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		4CCF7B2925E0A32400945503 /* 2_4_字符长度限制 */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF7B2A25E0A35300945503 /* XHRACTFLengthViewController.h */,
+				4CCF7B2B25E0A35300945503 /* XHRACTFLengthViewController.m */,
+			);
+			path = "2_4_字符长度限制";
 			sourceTree = "<group>";
 		};
 		4CFB41A725DE513600D86EAD /* Controller */ = {
@@ -1609,6 +1622,7 @@
 				4C8BBE5625DE0DA4006F6BBD /* XHDataMacroDefinition.swift in Sources */,
 				4C623BF525CCD6A1007366EE /* NSObject+Extension.m in Sources */,
 				4C62375325C95C60007366EE /* NSDate+Extension.m in Sources */,
+				4CCF7B2C25E0A35300945503 /* XHRACTFLengthViewController.m in Sources */,
 				4C8BBE3425DE0CB9006F6BBD /* ViewController+Extension.swift in Sources */,
 				4C8BBE8E25DE1062006F6BBD /* Date+Extension.swift in Sources */,
 				4C623AA925CBDED8007366EE /* NullSafe.m in Sources */,
