@@ -8,6 +8,11 @@
 
 #import "WEGExcessiveViewController.h"
 
+/**
+ * 这列作为app的启动页面
+ * 在这里可以实现一些其他操作, 比如: 引导页, 广告页, 是否升级, 还有app在审核之前需要隐藏的东西
+ *
+ */
 @interface WEGExcessiveViewController ()
 
 @end
@@ -17,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.orangeColor;
- 
+    self.view.backgroundColor = UIColor.whiteColor;
+    
     [self toDefaultVC];
     
     

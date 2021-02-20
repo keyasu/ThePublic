@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate (Extension)
 
+- (void)setUserDefalueData ;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
