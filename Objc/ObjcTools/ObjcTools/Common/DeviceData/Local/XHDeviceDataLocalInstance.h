@@ -12,6 +12,37 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XHDeviceDataLocalInstance : NSObject
 
+//MARK: -  获取设备信息
+/// 获取设备所有者的名称
++ (NSString *)device_name;
+/// 获取设备的类别
++ (NSString *)device_model;
+/// 本地化版本
++ (NSString *)device_localizedModel;
+/// 获取当前版本
++ (NSString *)device_systemVersion;
+/// 获取当前系统
++ (NSString *)device_systemName;
+/// 获取唯一表示符ID
++ (NSString *)device_UUIDString;
+/// 检测真机模拟还是模拟器：输出-1为模拟器，输出0-1为真机
++ (float)device_batteryLevel;
+/// 获取当前语言
++ (NSString *)device_language;
+/// 获取当前的国别
++ (NSString *)device_country;
+
+
+//MARK: - 获取app的各种信息
+/// App应用名称
++ (NSString *)app_displayName;
+/// App应用版本 1.2.3
++ (NSString *)app_version;
+/// App应用Build版本 122
++ (NSString *)app_Buildversion;
+/// App应用唯一标示符
++ (NSString *)app_bundleID;
+
 
 
 @end

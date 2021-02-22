@@ -208,28 +208,41 @@ static const CGFloat liuHaiHeight = 44;
 #pragma mark 获取Wifi信息
 + (id)fetchSSIDInfo
 {
-    NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
-    id info = nil;
-    for (NSString *ifnam in ifs) {
-        info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);
-        
-        if (info && [info count]) {
-            break;
+    /**
+     * 需要
+     * 证书上面支持 Access WiFi Information
+     * 在配置里面添加: Capability,
+     * 即可使用 : CNCopySupportedInterfaces(), 的能力
+     */
+    CFArrayRef myArray = CNCopySupportedInterfaces();
+    if (myArray != nil) {
+        CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
+        if (myDict != nil) {
+            NSDictionary *dic = (NSDictionary*)CFBridgingRelease(myDict);
+            return dic;
         }
     }
-    return info;
+    return nil;
 }
 
 #pragma mark 获取WIFI名字
 + (NSString *)getWifiSSID
 {
-    return (NSString *)[self fetchSSIDInfo][@"SSID"];
+    NSDictionary *dic = [self fetchSSIDInfo];
+    if (dic == nil) {
+        return nil;
+    }
+    return dic[@"SSID"];
 }
 
 #pragma mark 获取WIFI的MAC地址
 + (NSString *)getWifiBSSID
 {
-    return (NSString *)[self fetchSSIDInfo][@"BSSID"];
+    NSDictionary *dic = [self fetchSSIDInfo];
+    if (dic == nil) {
+        return nil;
+    }
+    return dic[@"BSSID"];
 }
 
 #pragma mark 获取Wifi信号强度
