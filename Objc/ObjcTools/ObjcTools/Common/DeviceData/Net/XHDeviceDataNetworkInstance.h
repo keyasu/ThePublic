@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 //获取当前网络类型
 + (NSString *)getNetworkType;
 //获取当前网络类型
-+ (NSString *)getNetworkTypeByReachability;
++ (void)getNetworkTypeByReachability:(void(^)(NSString * newwork))reachability;
 //获取Wifi信息
 + (id)fetchSSIDInfo;
 //获取WIFI名字

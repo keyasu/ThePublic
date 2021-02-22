@@ -31,6 +31,12 @@
     /// 创蓝初始化（一键登录）
     [self setCLShanyanSDK];
     
+    [self demo4];
+    
+}
+
+- (void)demo4 {
+
 }
 
 //插入排序

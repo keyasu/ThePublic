@@ -132,6 +132,7 @@
 		4CCF7B4C25E0BD6000945503 /* XHDeviceDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B4B25E0BD6000945503 /* XHDeviceDataViewCell.m */; };
 		4CCF7B5225E0BD8800945503 /* XHDeviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */; };
 		4CCF7B5B25E1062000945503 /* XHDeviceDataLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */; };
+		4CEB1A5E25E3A9760018C181 /* IOKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEB1A5B25E3A9760018C181 /* IOKit */; };
 		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
 		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
 		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
@@ -382,6 +383,9 @@
 		4CCF7B5925E1062000945503 /* XHDeviceDataLocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataLocal.h; sourceTree = "<group>"; };
 		4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataLocal.m; sourceTree = "<group>"; };
 		4CEB1A4825E3A69E0018C181 /* ObjcTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ObjcTools.entitlements; sourceTree = "<group>"; };
+		4CEB1A5B25E3A9760018C181 /* IOKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = IOKit; sourceTree = "<group>"; };
+		4CEB1A5C25E3A9760018C181 /* IOPowerSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPowerSources.h; sourceTree = "<group>"; };
+		4CEB1A5D25E3A9760018C181 /* IOPSKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPSKeys.h; sourceTree = "<group>"; };
 		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
 		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
 		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
@@ -401,6 +405,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CEB1A5E25E3A9760018C181 /* IOKit in Frameworks */,
 				4C623BFD25CCD815007366EE /* WebKit.framework in Frameworks */,
 				A5D9D7A21281EF81D8416F18 /* Pods_ObjcTools.framework in Frameworks */,
 			);
@@ -544,6 +549,7 @@
 		4C6236DC25C94FAF007366EE /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				4CEB1A5A25E3A96E0018C181 /* IO */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -1384,6 +1390,16 @@
 			path = Net;
 			sourceTree = "<group>";
 		};
+		4CEB1A5A25E3A96E0018C181 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB1A5B25E3A9760018C181 /* IOKit */,
+				4CEB1A5C25E3A9760018C181 /* IOPowerSources.h */,
+				4CEB1A5D25E3A9760018C181 /* IOPSKeys.h */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
 		4CFB41A725DE513600D86EAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1952,6 +1968,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ObjcTools/Libs/IO",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jxdkj.douhuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = jxdkj_douhuo_dev_20210218;
@@ -1980,6 +2000,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ObjcTools/Libs/IO",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jxdkj.douhuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

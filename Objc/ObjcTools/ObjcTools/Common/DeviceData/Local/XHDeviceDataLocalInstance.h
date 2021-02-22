@@ -26,11 +26,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取唯一表示符ID
 + (NSString *)device_UUIDString;
 /// 检测真机模拟还是模拟器：输出-1为模拟器，输出0-1为真机
-+ (float)device_batteryLevel;
++ (double)device_batteryLevel;
 /// 获取当前语言
 + (NSString *)device_language;
 /// 获取当前的国别
 + (NSString *)device_country;
+///获取总内存大小
++ (NSString *)device_memory;
+///获取总内存大小 scale
++ (NSString *)device_scale;
+///获取总内存大小 scale
++ (NSString *)device_screen;
+
 
 
 //MARK: - 获取app的各种信息

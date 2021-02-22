@@ -52,12 +52,11 @@
     return uuidStr;
 }
 /// 检测真机模拟还是模拟器：输出-1为模拟器，输出0-1为真机
-+ (float)device_batteryLevel {
-    //    检测真机模拟还是模拟器：输出-1为模拟器，输出0-1为真机
-    float batteryLevel = [[UIDevice currentDevice] batteryLevel];
-    NSLog(@"电量   %f", batteryLevel);
-    return batteryLevel;
++ (double)device_batteryLevel {
+    //    检测真机模拟还是模拟器：输出-1为模拟器，输出0-1为真机    
+    return [[XHDeviceDataLocal shared] getCurrentBatteryLevel];
 }
+
 /// 获取当前语言
 + (NSString *)device_language {
     NSArray *languageArray = [NSLocale preferredLanguages];
@@ -72,6 +71,44 @@
     NSLog(@"国家：%@", country); //国别
     return country;
 }
+///获取总内存大小
++ (NSString *)device_memory
+{
+    NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
+
+    NSNumber *freeber = [fattributes objectForKey:NSFileSystemFreeSize];
+    NSNumber *maxber = [fattributes objectForKey:NSFileSystemSize];
+
+    long long freespace = [freeber longLongValue];
+    long long maxspace = [maxber longLongValue];
+
+    NSString * sizeStr = [NSString stringWithFormat:@"剩余空间%0.1fG / 共%0.1fG",(double)freespace/1024/1024/1024,(double)maxspace/1024/1024/1024];
+    return sizeStr;
+
+}
+///获取总内存大小 scale
++ (NSString *)device_scale {
+    //2、获得scale：
+    CGFloat scale_screen = [UIScreen mainScreen].scale;
+    return [NSString stringWithFormat:@"%.0f", scale_screen];
+    
+}
+///获取总内存大小 scale
++ (NSString *)device_screen {
+    //1、得到当前屏幕的尺寸：
+    CGRect rect_screen = [[UIScreen mainScreen] bounds];
+    CGSize size_screen = rect_screen.size;
+    
+    //2、获得scale：
+    CGFloat scale_screen = [UIScreen mainScreen].scale;
+
+    //3 、获取分辨率
+    CGFloat width = size_screen.width*scale_screen;
+    CGFloat height = size_screen.height*scale_screen;
+    
+    return [NSString stringWithFormat:@"%.0fx%.0f", width, height];
+}
+
 
 
 //MARK: - 获取app的各种信息

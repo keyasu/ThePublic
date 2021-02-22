@@ -16,7 +16,8 @@
 
 ///
 @property (nonatomic, strong) NSMutableArray *dataCource;
-
+///
+@property (nonatomic, strong) NSString *newworkType;
 
 @end
 
@@ -25,6 +26,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.newworkType = @"";
+    @weakify(self);
+    [XHDeviceDataNetworkInstance getNetworkTypeByReachability:^(NSString * _Nonnull newwork) {
+        @strongify(self);
+        self.newworkType = newwork;
+        [self setupUI];
+    }];
 }
 
 
@@ -95,7 +103,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return kNewHeight(100);
 }
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return kNewWidth(88);
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -104,7 +112,8 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     NSString * tStr = section == 0 ? @"网络信息" : (section == 1 ? @"设备信息" : @"APP信息");
-    UILabel * l = [UILabel labelWithTitle:[@"   " append:tStr] FontSize:28 Color:UIColor.hex_999999 BackgroundColor:UIColor.hex_00184C_08];
+    UILabel * l = [UILabel labelWithTitle:[@"   " append:tStr] FontSize:28 Color:UIColor.hex_999999 BackgroundColor:UIColor.hex_F2F2F2];
+    l.frame = CGRectMake(0, 0, kScreenW, kNewHeight(88));
     
     return l;
 }
@@ -113,7 +122,7 @@
     //MARK: 网络数据
     NSArray * netWorkData = @[
         @{@"tStr": @"当前网络类型", @"dStr": [XHDeviceDataNetworkInstance getNetworkType]},
-        @{@"tStr": @"当前网络类型", @"dStr": [XHDeviceDataNetworkInstance getNetworkTypeByReachability]},
+        @{@"tStr": @"当前网络类型", @"dStr": self.newworkType},
         @{@"tStr": @"Wifi信息", @"dStr": [NSString stringWithFormat:@"%@", [(NSDictionary *)[XHDeviceDataNetworkInstance fetchSSIDInfo] toJSONstring]]},
         @{@"tStr": @"WIFI名字", @"dStr": [XHDeviceDataNetworkInstance getWifiSSID]},
         @{@"tStr": @"WIFi的MAC地址", @"dStr": [XHDeviceDataNetworkInstance getWifiBSSID]},
@@ -125,23 +134,26 @@
     NSArray * localData = @[
         @{@"tStr": @"设备所有者的名称", @"dStr": [XHDeviceDataLocalInstance device_name]},
         @{@"tStr": @"设备的类别", @"dStr": [XHDeviceDataLocalInstance device_model]},
+        @{@"tStr": @"设备的scale", @"dStr": [XHDeviceDataLocalInstance device_scale]},
+        @{@"tStr": @"设备的分辨率", @"dStr": [XHDeviceDataLocalInstance device_screen]},        
         @{@"tStr": @"本地化版本", @"dStr": [XHDeviceDataLocalInstance device_localizedModel]},
         @{@"tStr": @"当前版本", @"dStr": [XHDeviceDataLocalInstance device_systemVersion]},
         @{@"tStr": @"当前系统", @"dStr": [XHDeviceDataLocalInstance device_systemName]},
         @{@"tStr": @"唯一表示符ID", @"dStr": [XHDeviceDataLocalInstance device_UUIDString]},
-        /// 检测真机模拟还是模拟器：输出-1为模拟器，输出0-1为真机
-        @{@"tStr": @"真机模拟还是模拟器", @"dStr": [XHDeviceDataLocalInstance device_batteryLevel] == -1 ? @"模拟器" : @"真机"},
         @{@"tStr": @"当前语言", @"dStr": [XHDeviceDataLocalInstance device_language]},
         @{@"tStr": @"当前的国别", @"dStr": [XHDeviceDataLocalInstance device_country]},
+        @{@"tStr": @"当前电量", @"dStr": [NSString stringWithFormat:@"%.0f", [XHDeviceDataLocalInstance device_batteryLevel]]},
+        @{@"tStr": @"电量损耗", @"dStr": @"手机设置-电池-电池健康查看"},
+        @{@"tStr": @"内存", @"dStr": [XHDeviceDataLocalInstance device_memory]},
+        
     ];
     //MARK: app的信息
     NSArray * appData = @[
         @{@"tStr": @"名称", @"dStr": [XHDeviceDataLocalInstance app_displayName]},
         @{@"tStr": @"版本", @"dStr": [XHDeviceDataLocalInstance app_version]},
-        @{@"tStr": @"uild版本", @"dStr": [XHDeviceDataLocalInstance app_Buildversion]},
+        @{@"tStr": @"Build版本", @"dStr": [XHDeviceDataLocalInstance app_Buildversion]},
         @{@"tStr": @"bundleID", @"dStr": [XHDeviceDataLocalInstance app_bundleID]},
     ];
-    
     
     NSArray * netWorkDataModels = [NSArray yy_modelArrayWithClass:[XHDeviceDataModel class] json:netWorkData];
     NSArray * localDataModels = [NSArray yy_modelArrayWithClass:[XHDeviceDataModel class] json:localData];

@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// app的信息
 @property (nonatomic, strong) NSDictionary *dicInfo;
 
+- (double)getCurrentBatteryLevel;
 
 
 @end

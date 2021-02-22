@@ -180,29 +180,40 @@ static const CGFloat liuHaiHeight = 44;
 }
 
 #pragma mark 获取当前网络类型(通过Reachability)
-+ (NSString *)getNetworkTypeByReachability
++ (void)getNetworkTypeByReachability:(void(^)(NSString * newwork))reachability
 {
-    NSString *network = @"";
-    switch ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus) {
-        case AFNetworkReachabilityStatusUnknown:
-            network = @"Unknown";
-            break;
-        case AFNetworkReachabilityStatusNotReachable:
-            network = @"NONE";
-            break;
-        case AFNetworkReachabilityStatusReachableViaWiFi:
-            network = @"WIFI";
-            break;
-        case AFNetworkReachabilityStatusReachableViaWWAN:
-            network = @"WWAN";
-            break;
-        default:
-            break;
-    }
-    if ([network isEqualToString:@""]) {
-        network = @"NO DISPLAY";
-    }
-    return network;
+    // 如果要检测网络状态的变化,必须用检测管理器的单例的startMonitoring
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    // 检测网络连接的单例,网络变化时的回调方法
+    [[AFNetworkReachabilityManager sharedManager]setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"%ld",(long)status);
+        NSString *network = @"";
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                network = @"网络错误";
+                break;
+
+            case AFNetworkReachabilityStatusNotReachable:
+                network = @"没有连接网络";
+                break;
+
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                network = @"蜂窝网络";
+                break;
+
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                network = @"WIFI";
+                break;
+
+        }
+        // 如果要检测网络状态的变化,必须用检测管理器的单例的stopMonitoring
+        [[AFNetworkReachabilityManager sharedManager] stopMonitoring];
+        
+        !reachability ?: reachability(network);
+        
+    }];
+        
 }
 
 #pragma mark 获取Wifi信息

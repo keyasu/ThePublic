@@ -36,7 +36,7 @@
     }];
     [self.dLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
-        make.right.mas_equalTo(self.contentView.mas_right).mas_offset(-kNewWidth(16));
+        make.right.mas_equalTo(self.contentView.mas_right).mas_offset(-kNewWidth(16+10));
     }];
     
 }
