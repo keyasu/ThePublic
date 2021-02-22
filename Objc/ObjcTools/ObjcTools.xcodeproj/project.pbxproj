@@ -133,6 +133,7 @@
 		4CCF7B5225E0BD8800945503 /* XHDeviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */; };
 		4CCF7B5B25E1062000945503 /* XHDeviceDataLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */; };
 		4CEB1A5E25E3A9760018C181 /* IOKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEB1A5B25E3A9760018C181 /* IOKit */; };
+		4CEB1A6825E3CC3F0018C181 /* XH_Find_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CEB1A6725E3CC3F0018C181 /* XH_Find_list.json */; };
 		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
 		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
 		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
@@ -386,6 +387,7 @@
 		4CEB1A5B25E3A9760018C181 /* IOKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = IOKit; sourceTree = "<group>"; };
 		4CEB1A5C25E3A9760018C181 /* IOPowerSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPowerSources.h; sourceTree = "<group>"; };
 		4CEB1A5D25E3A9760018C181 /* IOPSKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPSKeys.h; sourceTree = "<group>"; };
+		4CEB1A6725E3CC3F0018C181 /* XH_Find_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XH_Find_list.json; sourceTree = "<group>"; };
 		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
 		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
 		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
@@ -1051,6 +1053,7 @@
 			isa = PBXGroup;
 			children = (
 				4C623B8425CBFC6A007366EE /* XH_Home_list.json */,
+				4CEB1A6725E3CC3F0018C181 /* XH_Find_list.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -1577,6 +1580,7 @@
 				4C623AE125CBF32B007366EE /* live_poll_loading.gif in Resources */,
 				4C62368E25C94C3E007366EE /* LaunchScreen.storyboard in Resources */,
 				4C623B8525CBFC6A007366EE /* XH_Home_list.json in Resources */,
+				4CEB1A6825E3CC3F0018C181 /* XH_Find_list.json in Resources */,
 				4C62368B25C94C3E007366EE /* Assets.xcassets in Resources */,
 				4C8BBEC825DE1443006F6BBD /* XH_Home_list.json in Resources */,
 				4C62368925C94C3D007366EE /* Main.storyboard in Resources */,

@@ -19,5 +19,21 @@
 }, {
     "tStr": "XHDeviceDataViewController",
     "dStr": "设备信息"
+}, {
+    "tStr": "录屏推流",
+    "dStr": ""
+}, {
+    "tStr": "动画",
+    "dStr": ""
+}, {
+    "tStr": "更换app图标",
+    "dStr": ""
+}, {
+    "tStr": "分享沙盒文件",
+    "dStr": ""
+}, {
+    "tStr": "RXSwift",
+    "dStr": "https://beeth0ven.github.io/RxSwift-Chinese-Documentation/content/recipes/pure_function.html"
 }
+
 ]
