@@ -31,6 +31,7 @@
 #import "UILabel+Extension.h"
 #import "UIButton+Extension.h"
 #import "UIButton+Action.h"
+#import "UIButton+HitRec.h"
 
 #import "UIImageView+Extension.h"
 #import "UIImage+Extension.h"

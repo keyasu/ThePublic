@@ -53,10 +53,11 @@
      self.textFiled,
      self.redView
      , nil];
-    self.imgView.frame = CGRectMake(0, 100, 300, 200);
-    self.label.frame = CGRectMake(0, self.imgView.bottom + 30, 300, 200);
-    self.textFiled.frame = CGRectMake(0, self.label.bottom + 30, 300, 200);
-    self.redView.frame = CGRectMake(0, self.textFiled.bottom + 30, 300, 200);
+    
+    self.imgView.frame = CGRectMake(10, 100, 300, 100);
+    self.label.frame = CGRectMake(10, self.imgView.bottom + 30, 300, 100);
+    self.textFiled.frame = CGRectMake(10, self.label.bottom + 30, 300, 100);
+    self.redView.frame = CGRectMake(10, self.textFiled.bottom + 30, 300, 100);
     
     self.imgView.userInteractionEnabled=YES;
     [self.imgView xh_Tapped:^{

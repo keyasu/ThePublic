@@ -84,10 +84,7 @@
 - (NSArray *)getArrray {
     NSArray * arr = @[
         @{@"tStr": @"XHOtherActionViewViewController", @"dStr": @"View增加点击事件"},
-        @{@"tStr": @"XHRACExampleViewController", @"dStr": @"基本用法"},
-        @{@"tStr": @"XHRACTimerViewController", @"dStr": @"RACimer"},
-        @{@"tStr": @"XHRACLoginViewController", @"dStr": @"登录页"},
-        @{@"tStr": @"XHRACTFLengthViewController", @"dStr": @"输入框字符长度"},
+        @{@"tStr": @"XHOtherActionButtonViewViewController", @"dStr": @"button增加点击区域"},
         
         
     ];
