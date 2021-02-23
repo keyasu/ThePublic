@@ -139,14 +139,6 @@
         self.baseView.frame = (CGRectMake(10, 200, kNewWidth(700), kNewHeight(300)));
     });
 }
-///****************** -------- 代替KVO -------- ******************/- (void)demo2 {
-//[_blueView rac_observeKeyPath:@"frame" options:NSKeyValueObservingOptionNew observer:nil block:^(id value, NSDictionary *change, BOOL causedByDealloc, BOOL affectedOnlyLastComponent) {        NSLog(@"%@----%@", value, change);
-//}];
-//}
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {    static int x = 50;
-//x++;
-//_blueView.frame = CGRectMake(x, 50, 100, 100);
-//}
 
 //MARK: 作为代理使用
 - (XHRACExampleView *)baseView {

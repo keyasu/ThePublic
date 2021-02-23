@@ -1,24 +1,24 @@
 //
-//  XHRACViewController.m
+//  XHOtherActionViewController.m
 //  ObjcTools
 //
-//  Created by douhuo on 2021/2/5.
+//  Created by douhuo on 2021/2/23.
 //  Copyright © 2021 wangergang. All rights reserved.
 //
 
-#import "XHRACViewController.h"
+#import "XHOtherActionViewController.h"
 #import "XHHomeViewCell.h"
 #import "XHHomeViewModel.h"
 
 
-@interface XHRACViewController ()
+@interface XHOtherActionViewController ()
 
 ///
 @property (nonatomic, strong) NSMutableArray *dataCource;
 
 @end
 
-@implementation XHRACViewController
+@implementation XHOtherActionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -83,7 +83,7 @@
 
 - (NSArray *)getArrray {
     NSArray * arr = @[
-        @{@"tStr": @"XHRACTupleViewController", @"dStr": @"元组"},
+        @{@"tStr": @"XHOtherActionViewViewController", @"dStr": @"View增加点击事件"},
         @{@"tStr": @"XHRACExampleViewController", @"dStr": @"基本用法"},
         @{@"tStr": @"XHRACTimerViewController", @"dStr": @"RACimer"},
         @{@"tStr": @"XHRACLoginViewController", @"dStr": @"登录页"},
@@ -98,3 +98,4 @@
 
 
 @end
+

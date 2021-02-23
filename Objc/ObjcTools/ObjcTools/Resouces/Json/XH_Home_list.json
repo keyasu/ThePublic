@@ -20,6 +20,9 @@
     "tStr": "XHDeviceDataViewController",
     "dStr": "设备信息"
 }, {
+    "tStr": "XHOtherActionViewController",
+    "dStr": "实用UI"
+}, {
     "tStr": "录屏推流",
     "dStr": ""
 }, {

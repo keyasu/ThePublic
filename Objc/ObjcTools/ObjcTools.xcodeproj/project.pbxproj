@@ -134,6 +134,14 @@
 		4CCF7B5B25E1062000945503 /* XHDeviceDataLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */; };
 		4CEB1A5E25E3A9760018C181 /* IOKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEB1A5B25E3A9760018C181 /* IOKit */; };
 		4CEB1A6825E3CC3F0018C181 /* XH_Find_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CEB1A6725E3CC3F0018C181 /* XH_Find_list.json */; };
+		4CEB1ACC25E4A1FD0018C181 /* XHRACTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB1ACB25E4A1FD0018C181 /* XHRACTimerViewController.m */; };
+		4CEB1ADF25E4A2AC0018C181 /* NSTimer+Pluto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB1ADE25E4A2AC0018C181 /* NSTimer+Pluto.m */; };
+		4CEB1AEC25E4A57E0018C181 /* kfc_menus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CEB1AEB25E4A57E0018C181 /* kfc_menus.plist */; };
+		4CEB1AF225E4A5BB0018C181 /* XHKFCMenus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB1AF125E4A5BB0018C181 /* XHKFCMenus.m */; };
+		4CEB1B4625E4B3490018C181 /* XHOtherActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB1B4525E4B3490018C181 /* XHOtherActionViewController.m */; };
+		4CEB1B4E25E4B36A0018C181 /* XHOtherActionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB1B4D25E4B36A0018C181 /* XHOtherActionViewViewController.m */; };
+		4CEB1B5725E4B5420018C181 /* UIView+TapBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB1B5625E4B5420018C181 /* UIView+TapBlock.m */; };
+		4CEB1B6525E4CB870018C181 /* IOKit in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 4CEB1A5B25E3A9760018C181 /* IOKit */; };
 		4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */; };
 		4CFB41BB25DE665D00D86EAD /* XHPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB41BA25DE665D00D86EAD /* XHPictureInPictureViewController.m */; };
 		4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB41C025DE680000D86EAD /* pincture_in_picture.MP4 */; };
@@ -158,6 +166,20 @@
 			remoteInfo = ObjcTools;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CEB1B6625E4CB870018C181 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4CEB1B6525E4CB870018C181 /* IOKit in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C62367B25C94C3D007366EE /* ObjcTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -388,6 +410,19 @@
 		4CEB1A5C25E3A9760018C181 /* IOPowerSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPowerSources.h; sourceTree = "<group>"; };
 		4CEB1A5D25E3A9760018C181 /* IOPSKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPSKeys.h; sourceTree = "<group>"; };
 		4CEB1A6725E3CC3F0018C181 /* XH_Find_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XH_Find_list.json; sourceTree = "<group>"; };
+		4CEB1ACA25E4A1FD0018C181 /* XHRACTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTimerViewController.h; sourceTree = "<group>"; };
+		4CEB1ACB25E4A1FD0018C181 /* XHRACTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTimerViewController.m; sourceTree = "<group>"; };
+		4CEB1ADD25E4A2AC0018C181 /* NSTimer+Pluto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Pluto.h"; sourceTree = "<group>"; };
+		4CEB1ADE25E4A2AC0018C181 /* NSTimer+Pluto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Pluto.m"; sourceTree = "<group>"; };
+		4CEB1AEB25E4A57E0018C181 /* kfc_menus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = kfc_menus.plist; sourceTree = "<group>"; };
+		4CEB1AF025E4A5BB0018C181 /* XHKFCMenus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHKFCMenus.h; sourceTree = "<group>"; };
+		4CEB1AF125E4A5BB0018C181 /* XHKFCMenus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHKFCMenus.m; sourceTree = "<group>"; };
+		4CEB1B4425E4B3490018C181 /* XHOtherActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHOtherActionViewController.h; sourceTree = "<group>"; };
+		4CEB1B4525E4B3490018C181 /* XHOtherActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHOtherActionViewController.m; sourceTree = "<group>"; };
+		4CEB1B4C25E4B36A0018C181 /* XHOtherActionViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHOtherActionViewViewController.h; sourceTree = "<group>"; };
+		4CEB1B4D25E4B36A0018C181 /* XHOtherActionViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHOtherActionViewViewController.m; sourceTree = "<group>"; };
+		4CEB1B5525E4B5420018C181 /* UIView+TapBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TapBlock.h"; sourceTree = "<group>"; };
+		4CEB1B5625E4B5420018C181 /* UIView+TapBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TapBlock.m"; sourceTree = "<group>"; };
 		4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHRACTupleViewController.h; sourceTree = "<group>"; };
 		4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRACTupleViewController.m; sourceTree = "<group>"; };
 		4CFB41B925DE665D00D86EAD /* XHPictureInPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPictureInPictureViewController.h; sourceTree = "<group>"; };
@@ -679,6 +714,7 @@
 			isa = PBXGroup;
 			children = (
 				4C62371825C95B72007366EE /* UIExtension.h */,
+				4CEB1AD325E4A27B0018C181 /* Timer */,
 				4CCF7B1F25E09B1400945503 /* TextField */,
 				4C623C4525CCDBF8007366EE /* UIResponder */,
 				4C623BF225CCD691007366EE /* NSObject */,
@@ -743,6 +779,8 @@
 				4C623A7125CBD9F7007366EE /* UIView+Addition.m */,
 				4C623B2925CBF444007366EE /* UIView+Animation.h */,
 				4C623B2A25CBF444007366EE /* UIView+Animation.m */,
+				4CEB1B5525E4B5420018C181 /* UIView+TapBlock.h */,
+				4CEB1B5625E4B5420018C181 /* UIView+TapBlock.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -877,6 +915,7 @@
 		4C6239AD25CBD2A1007366EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4CEB1B3D25E4B3110018C181 /* 8_其他实例 */,
 				4CCF7B3325E0B74B00945503 /* 7_设备信息 */,
 				4CCF7AD425DFB7CE00945503 /* 6_解锁 */,
 				4CCF7A8A25DF652300945503 /* 5_多线程 */,
@@ -986,6 +1025,7 @@
 		4C623AE525CBF32F007366EE /* plist */ = {
 			isa = PBXGroup;
 			children = (
+				4CEB1AEB25E4A57E0018C181 /* kfc_menus.plist */,
 			);
 			path = plist;
 			sourceTree = "<group>";
@@ -1107,6 +1147,7 @@
 		4C623D2225CD4DDE007366EE /* 2_RAC */ = {
 			isa = PBXGroup;
 			children = (
+				4CEB1AC925E4A1E60018C181 /* 2_5_定时器 */,
 				4CCF7B2925E0A32400945503 /* 2_4_字符长度限制 */,
 				4CCF7B0F25E09A0500945503 /* 2_3_登录页 */,
 				4CFB41C825DF490900D86EAD /* 2_2_基本用法 */,
@@ -1403,6 +1444,51 @@
 			path = IO;
 			sourceTree = "<group>";
 		};
+		4CEB1AC925E4A1E60018C181 /* 2_5_定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB1ACA25E4A1FD0018C181 /* XHRACTimerViewController.h */,
+				4CEB1ACB25E4A1FD0018C181 /* XHRACTimerViewController.m */,
+			);
+			path = "2_5_定时器";
+			sourceTree = "<group>";
+		};
+		4CEB1AD325E4A27B0018C181 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB1ADD25E4A2AC0018C181 /* NSTimer+Pluto.h */,
+				4CEB1ADE25E4A2AC0018C181 /* NSTimer+Pluto.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		4CEB1B3D25E4B3110018C181 /* 8_其他实例 */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB1B4B25E4B3510018C181 /* 1_View */,
+				4CEB1B4A25E4B34C0018C181 /* Controller */,
+			);
+			path = "8_其他实例";
+			sourceTree = "<group>";
+		};
+		4CEB1B4A25E4B34C0018C181 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB1B4425E4B3490018C181 /* XHOtherActionViewController.h */,
+				4CEB1B4525E4B3490018C181 /* XHOtherActionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CEB1B4B25E4B3510018C181 /* 1_View */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB1B4C25E4B36A0018C181 /* XHOtherActionViewViewController.h */,
+				4CEB1B4D25E4B36A0018C181 /* XHOtherActionViewViewController.m */,
+			);
+			path = 1_View;
+			sourceTree = "<group>";
+		};
 		4CFB41A725DE513600D86EAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1417,6 +1503,8 @@
 			children = (
 				4CFB41A925DE51BA00D86EAD /* XHRACTupleViewController.h */,
 				4CFB41AA25DE51BA00D86EAD /* XHRACTupleViewController.m */,
+				4CEB1AF025E4A5BB0018C181 /* XHKFCMenus.h */,
+				4CEB1AF125E4A5BB0018C181 /* XHKFCMenus.m */,
 			);
 			path = "2_1_元组";
 			sourceTree = "<group>";
@@ -1482,6 +1570,7 @@
 				4C62367925C94C3D007366EE /* Resources */,
 				D57EFE652224A0130AE5CD01 /* [CP] Embed Pods Frameworks */,
 				4CCF7B0E25E0962200945503 /* ShellScript */,
+				4CEB1B6625E4CB870018C181 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -1578,6 +1667,7 @@
 			files = (
 				4CFB41C125DE680000D86EAD /* pincture_in_picture.MP4 in Resources */,
 				4C623AE125CBF32B007366EE /* live_poll_loading.gif in Resources */,
+				4CEB1AEC25E4A57E0018C181 /* kfc_menus.plist in Resources */,
 				4C62368E25C94C3E007366EE /* LaunchScreen.storyboard in Resources */,
 				4C623B8525CBFC6A007366EE /* XH_Home_list.json in Resources */,
 				4CEB1A6825E3CC3F0018C181 /* XH_Find_list.json in Resources */,
@@ -1680,6 +1770,7 @@
 				4C62368625C94C3D007366EE /* ViewController.m in Sources */,
 				4C8BBE6A25DE0E16006F6BBD /* ImageView+Extension.swift in Sources */,
 				4C62373525C95C27007366EE /* UIView+Extension.m in Sources */,
+				4CEB1B4E25E4B36A0018C181 /* XHOtherActionViewViewController.m in Sources */,
 				4C62368025C94C3D007366EE /* AppDelegate.m in Sources */,
 				4C623ACB25CBEEEA007366EE /* WEGBaseScrollViewController.m in Sources */,
 				4C62396625CBC202007366EE /* XHMarketManager.m in Sources */,
@@ -1720,6 +1811,7 @@
 				4C8BBE6525DE0E06006F6BBD /* Screen+Extension.swift in Sources */,
 				4C8BBE3F25DE0D1E006F6BBD /* ConfigMethod.swift in Sources */,
 				4C62375925C95C70007366EE /* UICollectionView+Extension.m in Sources */,
+				4CEB1ACC25E4A1FD0018C181 /* XHRACTimerViewController.m in Sources */,
 				4C623BD725CCD18C007366EE /* ScreenShotViewController.m in Sources */,
 				4C8BBEB725DE12AF006F6BBD /* XHMessageViewController.swift in Sources */,
 				4CCF7AAA25DF879F00945503 /* XHThreadSafeViewController.m in Sources */,
@@ -1733,6 +1825,7 @@
 				4C623A8025CBDBB4007366EE /* JPushInstance.m in Sources */,
 				4CCF7A8D25DF653400945503 /* XHGCDViewController.m in Sources */,
 				4C62376B25C95C85007366EE /* UITableViewCell+Extension.m in Sources */,
+				4CEB1B4625E4B3490018C181 /* XHOtherActionViewController.m in Sources */,
 				4CFB41CB25DF492800D86EAD /* XHRACExampleViewController.m in Sources */,
 				4C8BBE9325DE1071006F6BBD /* DefaultsKeys+Extension.swift in Sources */,
 				4C62395F25CBC14D007366EE /* BaseTabBar.m in Sources */,
@@ -1746,6 +1839,7 @@
 				4C6236F225C9585E007366EE /* WEGBaseView.m in Sources */,
 				4C623B6A25CBF80C007366EE /* WEGBaseCLCell.m in Sources */,
 				4C623AB125CBE2C4007366EE /* ThirdExtension.swift in Sources */,
+				4CEB1B5725E4B5420018C181 /* UIView+TapBlock.m in Sources */,
 				4CFB41AB25DE51BA00D86EAD /* XHRACTupleViewController.m in Sources */,
 				4C8BBE7E25DE0E68006F6BBD /* View+Extension.swift in Sources */,
 				4C623AD725CBEEFC007366EE /* WEGBaseCLViewController.m in Sources */,
@@ -1776,6 +1870,8 @@
 				4CCF7B3925E0B79300945503 /* XHDeviceDataViewController.m in Sources */,
 				4CCF7AE825DFB94700945503 /* XHUnlockViewController.m in Sources */,
 				4C8BBE3925DE0CEE006F6BBD /* String+Extension.swift in Sources */,
+				4CEB1ADF25E4A2AC0018C181 /* NSTimer+Pluto.m in Sources */,
+				4CEB1AF225E4A5BB0018C181 /* XHKFCMenus.m in Sources */,
 				4C623A7925CBDB35007366EE /* XHProtocolResolver.m in Sources */,
 				4CCF7B4C25E0BD6000945503 /* XHDeviceDataViewCell.m in Sources */,
 				4C8BBE6025DE0DEB006F6BBD /* Image+Extension.swift in Sources */,

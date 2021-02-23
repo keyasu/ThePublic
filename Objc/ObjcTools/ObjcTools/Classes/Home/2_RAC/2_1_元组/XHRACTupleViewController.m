@@ -7,7 +7,7 @@
 //
 
 #import "XHRACTupleViewController.h"
-
+#import "XHKFCMenus.h"
 @interface XHRACTupleViewController ()
 
 @end
@@ -81,14 +81,31 @@
 }
 
 - (void)demo4 {
-    NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:@"网页链接"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:NULL];
-        NSArray *infoArr = [[array.rac_sequence.signal map:^id _Nullable(NSDictionary *value) {
-            return value; // 在这里可以进行数据转模型的变化
-        }] toArray];
-        NSLog(@"%@", infoArr);
-    }] resume];
+    //解析Plist路径
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"kfc_menus.plist" ofType:nil];
+    NSArray *dictArr = [NSArray arrayWithContentsOfFile:filePath];
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    
+    [dictArr.rac_sequence.signal subscribeNext:^(NSDictionary * x) {
+        
+        XHKFCMenus *kfc = [XHKFCMenus KFCWithDict:x];
+        [arr addObject:kfc];
+        
+    }];
+        
+    NSArray *arr2 = [[dictArr.rac_sequence map:^id _Nullable(NSDictionary * value) {
+        return [XHKFCMenus KFCWithDict:value];
+    }] array];
+    NSLog(@"%@", arr2);
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    [[session dataTaskWithURL:[NSURL URLWithString:@"网页链接"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:NULL];
+//        NSArray *infoArr = [[array.rac_sequence.signal map:^id _Nullable(NSDictionary *value) {
+//            return value; // 在这里可以进行数据转模型的变化
+//        }] toArray];
+//        NSLog(@"%@", infoArr);
+//    }] resume];
 }
 /*
 #pragma mark - Navigation
