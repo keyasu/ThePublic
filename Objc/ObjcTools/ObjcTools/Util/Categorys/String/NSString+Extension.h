@@ -24,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 //MARK: -  字符串后面拼接数据
 - (NSString *)append:(NSString *)str;
 
+/// 能用浏览器打开
+- (BOOL)canOpenWithApplication ;
+/// 系统浏览器打开
+- (void)openWithApplication;
+/// 拨打电话
+- (void)openPhoneWithApplication ;
 
 
 

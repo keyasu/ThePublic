@@ -55,5 +55,33 @@
     NSString * re = [NSString stringWithFormat:@"%@%@", self, str];
     return re;
 }
+- (BOOL)canOpenWithApplication {
+    if ([[UIApplication sharedApplication] canOpenURL:[self transToUrl]]) {
+        return YES;
+    }
+    return NO;
+}
+- (void)openWithApplication {
+    if ([[UIApplication sharedApplication] canOpenURL:[self transToUrl]]) {
+        
+        if (@available(iOS 10.0, *)) {
+            [[UIApplication sharedApplication] openURL:[self transToUrl]
+                                               options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@NO}
+                                     completionHandler:^(BOOL success) {
+                
+                NSLog(@"Safari 去打开该链接");
+                
+            }];
+        }else {
+            [[UIApplication sharedApplication] openURL:[self transToUrl]];
+        }
+    }
+}
+- (void)openPhoneWithApplication {
+    NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"telprompt://%@", self];
+    
+    [str openWithApplication];
+}
+
 
 @end

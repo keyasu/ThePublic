@@ -68,11 +68,14 @@
     XHHomeViewModel * model = [self.dataCource SafeObjectAt:indexPath.row];
     NSString *tStr = model.tStr;
     NSString *dStr = model.dStr;
+    if ([tStr isUrl]) {
+        [tStr openWithApplication];
+    }else {
+        UIViewController * vc = [[NSClassFromString(tStr) alloc] init];
+        vc.gk_navTitle = dStr;
+        [self pushToController:vc];
+    }
     
-    UIViewController * vc = [[NSClassFromString(tStr) alloc] init];
-    vc.gk_navTitle = dStr;
-    
-    [self pushToController:vc];
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
