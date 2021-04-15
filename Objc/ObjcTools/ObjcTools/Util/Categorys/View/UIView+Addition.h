@@ -10,6 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    TZOscillatoryAnimationToBigger,
+    TZOscillatoryAnimationToSmaller,
+} TZOscillatoryAnimationType;
+
+
 @interface UIView (Addition)
 
 
@@ -96,6 +102,28 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)shadowColor:(UIColor *)shadowColor shadowOffset:(CGSize)offset shadowRadius:(CGFloat)sradius shadowOpacity:(CGFloat)opacity
 cornerRadius:(CGFloat)cradius borderWidth:(CGFloat)width borderColor:(UIColor *)borderColor;
 
+
++ (void)showOscillatoryAnimationWithLayer:(CALayer *)layer type:(TZOscillatoryAnimationType)type;
+- (void)addShadowAndCornerToViewWithSuperView:(UIView *)superView
+                                 cornerRadius:(CGFloat)cornerRadius
+                                 shadowRadius:(CGFloat)shadowRadius
+                                  shadowColor:(UIColor *)shadowColor
+                                 shadowOffset:(CGSize )offset
+                                shadowOpacity:(CGFloat)opacity
+                                  borderWidth:(CGFloat)borderWidth
+                                  borderColor:(UIColor *)borderColor;
+
+- (void)addShadowAndCornerToViewWithSuperView:(UIView *)superView
+                                 cornerRadius:(CGFloat)cornerRadius
+                                 shadowRadius:(CGFloat)shadowRadius
+                                  shadowColor:(UIColor *)shadowColor
+                                 shadowOffset:(CGSize )offset
+                                shadowOpacity:(CGFloat)opacity
+                                  borderWidth:(CGFloat)borderWidth
+                                  borderColor:(UIColor *)borderColor
+                                   andCorners:(UIRectCorner)corners;
+-(void)addDefaultShadowAndCorner;
+-(void)addDefaultShadowAndCorners:(UIRectCorner)corners;
 
 @end
 

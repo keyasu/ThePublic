@@ -11,6 +11,7 @@
 		4C56F5DB25ECF75900C506D3 /* XHBaseTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56F5DA25ECF75900C506D3 /* XHBaseTBViewController.swift */; };
 		4C56F5DF25ECF78000C506D3 /* XHBaseScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56F5DE25ECF78000C506D3 /* XHBaseScrollViewViewController.swift */; };
 		4C56F5E325ECF94800C506D3 /* XHBaseCLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56F5E225ECF94800C506D3 /* XHBaseCLViewController.swift */; };
+		4C56F5EE25EDCEC600C506D3 /* XHBroadcastPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C56F5ED25EDCEC600C506D3 /* XHBroadcastPickerViewController.m */; };
 		4C62368025C94C3D007366EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62367F25C94C3D007366EE /* AppDelegate.m */; };
 		4C62368625C94C3D007366EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62368525C94C3D007366EE /* ViewController.m */; };
 		4C62368925C94C3D007366EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C62368725C94C3D007366EE /* Main.storyboard */; };
@@ -136,6 +137,7 @@
 		4CCF7B4C25E0BD6000945503 /* XHDeviceDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B4B25E0BD6000945503 /* XHDeviceDataViewCell.m */; };
 		4CCF7B5225E0BD8800945503 /* XHDeviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */; };
 		4CCF7B5B25E1062000945503 /* XHDeviceDataLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */; };
+		4CD22F4C2602F6C000DF4CC8 /* XHAnimationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD22F4B2602F6C000DF4CC8 /* XHAnimationTools.m */; };
 		4CEB1A5E25E3A9760018C181 /* IOKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEB1A5B25E3A9760018C181 /* IOKit */; };
 		4CEB1A6825E3CC3F0018C181 /* XH_Find_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CEB1A6725E3CC3F0018C181 /* XH_Find_list.json */; };
 		4CEB1ACC25E4A1FD0018C181 /* XHRACTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB1ACB25E4A1FD0018C181 /* XHRACTimerViewController.m */; };
@@ -192,6 +194,8 @@
 		4C56F5DA25ECF75900C506D3 /* XHBaseTBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHBaseTBViewController.swift; sourceTree = "<group>"; };
 		4C56F5DE25ECF78000C506D3 /* XHBaseScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHBaseScrollViewViewController.swift; sourceTree = "<group>"; };
 		4C56F5E225ECF94800C506D3 /* XHBaseCLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHBaseCLViewController.swift; sourceTree = "<group>"; };
+		4C56F5EC25EDCEC600C506D3 /* XHBroadcastPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHBroadcastPickerViewController.h; sourceTree = "<group>"; };
+		4C56F5ED25EDCEC600C506D3 /* XHBroadcastPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHBroadcastPickerViewController.m; sourceTree = "<group>"; };
 		4C62367B25C94C3D007366EE /* ObjcTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C62367E25C94C3D007366EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C62367F25C94C3D007366EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -415,6 +419,8 @@
 		4CCF7B5125E0BD8800945503 /* XHDeviceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataModel.m; sourceTree = "<group>"; };
 		4CCF7B5925E1062000945503 /* XHDeviceDataLocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDeviceDataLocal.h; sourceTree = "<group>"; };
 		4CCF7B5A25E1062000945503 /* XHDeviceDataLocal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHDeviceDataLocal.m; sourceTree = "<group>"; };
+		4CD22F4A2602F6C000DF4CC8 /* XHAnimationTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHAnimationTools.h; sourceTree = "<group>"; };
+		4CD22F4B2602F6C000DF4CC8 /* XHAnimationTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHAnimationTools.m; sourceTree = "<group>"; };
 		4CEB1A4825E3A69E0018C181 /* ObjcTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ObjcTools.entitlements; sourceTree = "<group>"; };
 		4CEB1A5B25E3A9760018C181 /* IOKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = IOKit; sourceTree = "<group>"; };
 		4CEB1A5C25E3A9760018C181 /* IOPowerSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPowerSources.h; sourceTree = "<group>"; };
@@ -485,6 +491,22 @@
 				4C56F5D625ECF66300C506D3 /* XHWaterfallFlowViewController.swift */,
 			);
 			path = "WaterfallFlow  ";
+			sourceTree = "<group>";
+		};
+		4C56F5EB25EDCE9800C506D3 /* 9_BroadcastPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				4C56F5EC25EDCEC600C506D3 /* XHBroadcastPickerViewController.h */,
+				4C56F5ED25EDCEC600C506D3 /* XHBroadcastPickerViewController.m */,
+			);
+			path = 9_BroadcastPickerView;
+			sourceTree = "<group>";
+		};
+		4C56F60E25EDE7D900C506D3 /* Rac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rac;
 			sourceTree = "<group>";
 		};
 		4C62367225C94C3D007366EE = {
@@ -695,6 +717,7 @@
 		4C62371225C95B37007366EE /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				4CD22F492602F69A00DF4CC8 /* Ani */,
 				4C6237B025C9609D007366EE /* Macro */,
 				4C623B7825CBFBDA007366EE /* Instance */,
 				4C62379A25C95E46007366EE /* Config */,
@@ -939,6 +962,7 @@
 		4C6239AD25CBD2A1007366EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4C56F5EB25EDCE9800C506D3 /* 9_BroadcastPickerView */,
 				4CEB1B3D25E4B3110018C181 /* 8_其他实例 */,
 				4CCF7B3325E0B74B00945503 /* 7_设备信息 */,
 				4CCF7AD425DFB7CE00945503 /* 6_解锁 */,
@@ -957,6 +981,7 @@
 			isa = PBXGroup;
 			children = (
 				4C8BBEBE25DE12D5006F6BBD /* XHFindViewController.swift */,
+				4C56F60E25EDE7D900C506D3 /* Rac */,
 				4C56F5CA25ECF5DD00C506D3 /* WaterfallFlow   */,
 			);
 			path = Find;
@@ -1462,6 +1487,15 @@
 			path = Net;
 			sourceTree = "<group>";
 		};
+		4CD22F492602F69A00DF4CC8 /* Ani */ = {
+			isa = PBXGroup;
+			children = (
+				4CD22F4A2602F6C000DF4CC8 /* XHAnimationTools.h */,
+				4CD22F4B2602F6C000DF4CC8 /* XHAnimationTools.m */,
+			);
+			path = Ani;
+			sourceTree = "<group>";
+		};
 		4CEB1A5A25E3A96E0018C181 /* IO */ = {
 			isa = PBXGroup;
 			children = (
@@ -1831,6 +1865,7 @@
 				4C623B2B25CBF444007366EE /* UIView+Animation.m in Sources */,
 				4C62395925CBC106007366EE /* BaseTabBarController.m in Sources */,
 				4C623C4825CCDC0C007366EE /* UIResponder+Extension.m in Sources */,
+				4CD22F4C2602F6C000DF4CC8 /* XHAnimationTools.m in Sources */,
 				4C6239B325CBD2C9007366EE /* XHHomeViewController.m in Sources */,
 				4C8BBE7425DE0E3F006F6BBD /* Label+Extension.swift in Sources */,
 				4C62377125C95C92007366EE /* UICollectionReusableView+Extension.m in Sources */,
@@ -1855,6 +1890,7 @@
 				4CEB1ACC25E4A1FD0018C181 /* XHRACTimerViewController.m in Sources */,
 				4C623BD725CCD18C007366EE /* ScreenShotViewController.m in Sources */,
 				4C8BBEB725DE12AF006F6BBD /* XHMessageViewController.swift in Sources */,
+				4C56F5EE25EDCEC600C506D3 /* XHBroadcastPickerViewController.m in Sources */,
 				4CCF7AAA25DF879F00945503 /* XHThreadSafeViewController.m in Sources */,
 				4C6236E825C9581E007366EE /* BaseModel.m in Sources */,
 				4C8BBE8325DE0E79006F6BBD /* View+Addition.swift in Sources */,
